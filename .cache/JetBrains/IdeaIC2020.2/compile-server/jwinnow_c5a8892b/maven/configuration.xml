@@ -1,0 +1,86 @@
+<maven-project-configuration>
+  <resource-processing>
+    <maven-module name="jwinnow">
+      <MavenModuleResourceConfiguration>
+        <id>
+          <MavenIdBean>
+            <groupId>in.flipbrain</groupId>
+            <artifactId>jwinnow</artifactId>
+            <version>1.0-SNAPSHOT</version>
+          </MavenIdBean>
+        </id>
+        <directory>/home/vinay/Downloads/DocumentFingerprint_Winnowing-main</directory>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpDcmVhdGVkLUJ5OiBJbnRlbGxpSiBJREVBDQpCdWlsdC1CeTogdmluYXkNCkJ1aWxkLUpkazogMTUNCg0K</manifest>
+        <classpath>guava-19.0.jar</classpath>
+        <delimiters-pattern>\$\{(.+?)}|@(.+?)@</delimiters-pattern>
+        <model-map>
+          <entry key="artifactId" value="jwinnow" />
+          <entry key="build.directory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/target" />
+          <entry key="build.finalName" value="jwinnow-1.0-SNAPSHOT" />
+          <entry key="build.outputDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/target/classes" />
+          <entry key="build.plugin.maven-ear-plugin.skinnyWars" value="false" />
+          <entry key="build.scriptSourceDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/src/main/scripts" />
+          <entry key="build.sourceDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/src/main/java" />
+          <entry key="build.testOutputDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/target/test-classes" />
+          <entry key="build.testSourceDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/src/test/java" />
+          <entry key="groupId" value="in.flipbrain" />
+          <entry key="location" value="2 : 205, in.flipbrain:jwinnow:1.0-SNAPSHOT /home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="location.columnNumber" value="205" />
+          <entry key="location.lineNumber" value="2" />
+          <entry key="location.source" value="in.flipbrain:jwinnow:1.0-SNAPSHOT /home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="location.source.location" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="location.source.modelId" value="in.flipbrain:jwinnow:1.0-SNAPSHOT" />
+          <entry key="modelEncoding" value="UTF-8" />
+          <entry key="modelVersion" value="4.0.0" />
+          <entry key="name" value="jwinnow" />
+          <entry key="packaging" value="jar" />
+          <entry key="pomFile" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="propertiesLocation" value="8 : 17, in.flipbrain:jwinnow:1.0-SNAPSHOT /home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="propertiesLocation.columnNumber" value="17" />
+          <entry key="propertiesLocation.lineNumber" value="8" />
+          <entry key="propertiesLocation.source" value="in.flipbrain:jwinnow:1.0-SNAPSHOT /home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="propertiesLocation.source.location" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/pom.xml" />
+          <entry key="propertiesLocation.source.modelId" value="in.flipbrain:jwinnow:1.0-SNAPSHOT" />
+          <entry key="reporting.outputDirectory" value="/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/target/site" />
+          <entry key="reporting.outputDirectoryLocation" value="96 : 22, org.apache.maven:maven-model-builder:3.6.3:super-pom jar:file:/snap/intellij-idea-community/252/plugins/maven/lib/maven3/lib/maven-model-builder-3.6.3.jar!/org/apache/maven/model/pom-4.0.0.xml" />
+          <entry key="reporting.outputDirectoryLocation.columnNumber" value="22" />
+          <entry key="reporting.outputDirectoryLocation.lineNumber" value="96" />
+          <entry key="reporting.outputDirectoryLocation.source" value="org.apache.maven:maven-model-builder:3.6.3:super-pom jar:file:/snap/intellij-idea-community/252/plugins/maven/lib/maven3/lib/maven-model-builder-3.6.3.jar!/org/apache/maven/model/pom-4.0.0.xml" />
+          <entry key="reporting.outputDirectoryLocation.source.location" value="jar:file:/snap/intellij-idea-community/252/plugins/maven/lib/maven3/lib/maven-model-builder-3.6.3.jar!/org/apache/maven/model/pom-4.0.0.xml" />
+          <entry key="reporting.outputDirectoryLocation.source.modelId" value="org.apache.maven:maven-model-builder:3.6.3:super-pom" />
+          <entry key="version" value="1.0-SNAPSHOT" />
+        </model-map>
+        <properties>
+          <entry key="java.home" value="/home/vinay/.jdks/openjdk-15" />
+          <entry key="java.version" value="java version &quot;15&quot;" />
+          <entry key="maven.compiler.source" value="1.8" />
+          <entry key="maven.compiler.target" value="1.8" />
+          <entry key="project.build.sourceEncoding" value="UTF-8" />
+          <entry key="settings.localRepository" value="/home/vinay/.m2/repository" />
+        </properties>
+        <filtering-excluded-extensions />
+        <option name="escapeString" />
+        <option name="escapeWindowsPaths" value="true" />
+        <option name="overwrite" value="false" />
+        <option name="outputDirectory" />
+        <option name="testOutputDirectory" />
+        <resources>
+          <resource filtered="false">
+            <directory>/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/src/main/resources</directory>
+            <includes />
+            <excludes />
+          </resource>
+        </resources>
+        <test-resources>
+          <resource filtered="false">
+            <directory>/home/vinay/Downloads/DocumentFingerprint_Winnowing-main/src/test/resources</directory>
+            <includes />
+            <excludes />
+          </resource>
+        </test-resources>
+      </MavenModuleResourceConfiguration>
+    </maven-module>
+  </resource-processing>
+  <web-artifact-cfg />
+  <ejb-client-artifact-cfg />
+</maven-project-configuration>

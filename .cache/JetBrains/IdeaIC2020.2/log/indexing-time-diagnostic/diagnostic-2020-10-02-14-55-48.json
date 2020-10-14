@@ -1,0 +1,511 @@
+{
+  "appInfo" : {
+    "build" : "202.7319.50",
+    "buildDate" : "Tue, 15 Sep 2020 03:51:46 +0530",
+    "productCode" : "IC",
+    "generated" : "Fri, 2 Oct 2020 14:55:48 +0530",
+    "os" : "Linux 5.4.0-48-generic",
+    "runtime" : "JetBrains s.r.o. 11.0.8 11.0.8+10-b944.31"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 760217600,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "jwinnow",
+    "numberOfFileProviders" : 4,
+    "totalNumberOfFiles" : 2771,
+    "times" : {
+      "indexingTime" : "16 s 402 ms",
+      "scanFilesTime" : "1 s 510 ms",
+      "pushPropertiesTime" : "196 ms",
+      "indexExtensionsTime" : "< 1 ms",
+      "pushPropertiesStart" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "pushPropertiesEnd" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "scanFilesStart" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "scanFilesEnd" : "Fri, 2 Oct 2020 14:55:33 +0530",
+      "indexExtensionsStart" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "indexExtensionsEnd" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "indexingStart" : "Fri, 2 Oct 2020 14:55:31 +0530",
+      "indexingEnd" : "Fri, 2 Oct 2020 14:55:47 +0530"
+    },
+    "numberOfIndexingThreads" : 3,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "CLASS",
+      "partOfTotalIndexingTime" : "55.7%",
+      "partOfTotalContentLoadingTime" : "56.1%",
+      "totalNumberOfFiles" : 2048,
+      "totalFilesSize" : "5.7 MB",
+      "indexingSpeed" : "616.53 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+        "numberOfFiles" : 1717,
+        "totalFilesSize" : "5.01 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "95.8%"
+      }, {
+        "providerName" : "Library 'Maven: junit:junit:4.12'",
+        "numberOfFiles" : 286,
+        "totalFilesSize" : "598.06 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.6%"
+      }, {
+        "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+        "numberOfFiles" : 45,
+        "totalFilesSize" : "93.87 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "JAVA",
+      "partOfTotalIndexingTime" : "35.1%",
+      "partOfTotalContentLoadingTime" : "42.9%",
+      "totalNumberOfFiles" : 707,
+      "totalFilesSize" : "5.27 MB",
+      "indexingSpeed" : "906.14 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'jwinnow'",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "21.17 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "57.2%"
+      }, {
+        "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+        "numberOfFiles" : 469,
+        "totalFilesSize" : "4.58 MB",
+        "partOfTotalIndexingTimeOfThisFileType" : "38.5%"
+      }, {
+        "providerName" : "Library 'Maven: junit:junit:4.12'",
+        "numberOfFiles" : 195,
+        "totalFilesSize" : "570.17 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.5%"
+      }, {
+        "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+        "numberOfFiles" : 38,
+        "totalFilesSize" : "97.2 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "< 1%"
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalIndexingTime" : "3.4%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "14.31 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.79 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "58.3%"
+      }, {
+        "providerName" : "Module 'jwinnow'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.33 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "41.7%"
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalIndexingTime" : "2.9%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "129 B",
+      "indexingSpeed" : "264 B/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "129 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "Markdown",
+      "partOfTotalIndexingTime" : "2.5%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "278 B",
+      "indexingSpeed" : "673 B/s",
+      "biggestContributors" : [ {
+        "providerName" : "Module 'jwinnow'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "278 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "HTML",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "356 B",
+      "indexingSpeed" : "9.85 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "356 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "24.55 kB",
+      "indexingSpeed" : "1.08 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: junit:junit:4.12'",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "23.04 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "96.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.51 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "3.1%"
+      } ]
+    }, {
+      "fileType" : "Manifest",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "< 1%",
+      "totalNumberOfFiles" : 6,
+      "totalFilesSize" : "3.9 kB",
+      "indexingSpeed" : "788.89 kB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "3 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "59.9%"
+      }, {
+        "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "514 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "21.5%"
+      }, {
+        "providerName" : "Library 'Maven: junit:junit:4.12'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "380 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "18.6%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : "40.9%",
+      "totalNumberOfFiles" : 2059,
+      "totalFilesSize" : "5.73 MB",
+      "indexingSpeed" : "843.98 kB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "17.0%",
+      "totalNumberOfFiles" : 723,
+      "totalFilesSize" : "5.31 MB",
+      "indexingSpeed" : "1.88 MB/s"
+    }, {
+      "indexId" : "bytecodeAnalysis",
+      "partOfTotalIndexingTime" : "15.8%",
+      "totalNumberOfFiles" : 2048,
+      "totalFilesSize" : "5.7 MB",
+      "indexingSpeed" : "2.17 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "8.7%",
+      "totalNumberOfFiles" : 723,
+      "totalFilesSize" : "5.31 MB",
+      "indexingSpeed" : "3.67 MB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+      "partOfTotalIndexingTime" : "4.8%",
+      "totalNumberOfFiles" : 2048,
+      "totalFilesSize" : "5.7 MB",
+      "indexingSpeed" : "7.1 MB/s"
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : "4.8%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "21.17 kB",
+      "indexingSpeed" : "26.69 kB/s"
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "4.1%",
+      "totalNumberOfFiles" : 7,
+      "totalFilesSize" : "22.78 kB",
+      "indexingSpeed" : "33.87 kB/s"
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : "1.7%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "21.17 kB",
+      "indexingSpeed" : "75.54 kB/s"
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+      "partOfTotalIndexingTime" : "1.1%",
+      "totalNumberOfFiles" : 2048,
+      "totalFilesSize" : "5.7 MB",
+      "indexingSpeed" : "30.72 MB/s"
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 5,
+      "totalFilesSize" : "21.17 kB",
+      "indexingSpeed" : "153.22 kB/s"
+    }, {
+      "indexId" : "ant-imports",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "401.31 kB/s"
+    }, {
+      "indexId" : "FrameworkDetectionIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1.33 kB",
+      "indexingSpeed" : "168.49 kB/s"
+    }, {
+      "indexId" : "fileIncludes",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1.33 kB",
+      "indexingSpeed" : "632.83 kB/s"
+    }, {
+      "indexId" : "DomFileIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "5.9 MB/s"
+    }, {
+      "indexId" : "xmlProperties",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "12.85 MB/s"
+    }, {
+      "indexId" : "IdeaPluginRegistrationIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "24.26 MB/s"
+    }, {
+      "indexId" : "RelaxSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1.33 kB",
+      "indexingSpeed" : "10.87 MB/s"
+    }, {
+      "indexId" : "XsltSymbolIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "1.33 kB",
+      "indexingSpeed" : "15.31 MB/s"
+    }, {
+      "indexId" : "PluginIdModuleIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "376.04 MB/s"
+    }, {
+      "indexId" : "PluginIdDependenciesIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "544.94 MB/s"
+    }, {
+      "indexId" : "devkit.ExtensionPointIndex",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "8.12 kB",
+      "indexingSpeed" : "591.22 MB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Library 'Maven: com.google.guava:guava:19.0'",
+      "totalNumberOfFiles" : 2190,
+      "totalIndexingTime" : "11 s 572 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 1717,
+        "totalFilesSize" : "5.01 MB",
+        "partOfTotalIndexingTime" : "74.3%",
+        "partOfTotalContentLoadingTime" : "64.6%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 469,
+        "totalFilesSize" : "4.58 MB",
+        "partOfTotalIndexingTime" : "18.8%",
+        "partOfTotalContentLoadingTime" : "35.4%"
+      }, {
+        "fileType" : "Properties",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "129 B",
+        "partOfTotalIndexingTime" : "4.1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "6.79 kB",
+        "partOfTotalIndexingTime" : "2.8%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "3 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "49.3%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "21.4%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "14.2%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "7.0%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+        "partOfTotalIndexingTime" : "6.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "1.4%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "ant-imports", "devkit.ExtensionPointIndex", "xmlProperties" ]
+    }, {
+      "providerName" : "Module 'jwinnow'",
+      "totalNumberOfFiles" : 7,
+      "totalIndexingTime" : "1 s 987 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 5,
+        "totalFilesSize" : "21.17 kB",
+        "partOfTotalIndexingTime" : "83.7%",
+        "partOfTotalContentLoadingTime" : "83.2%"
+      }, {
+        "fileType" : "Markdown",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "278 B",
+        "partOfTotalIndexingTime" : "10.4%",
+        "partOfTotalContentLoadingTime" : "16.8%"
+      }, {
+        "fileType" : "XML",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.33 kB",
+        "partOfTotalIndexingTime" : "6.0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "23.4%"
+      }, {
+        "indexId" : "java.null.method.argument",
+        "partOfTotalIndexingTime" : "20.0%"
+      }, {
+        "indexId" : "TodoIndex",
+        "partOfTotalIndexingTime" : "16.9%"
+      }, {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "15.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "13.6%"
+      }, {
+        "indexId" : "java.fun.expression",
+        "partOfTotalIndexingTime" : "7.1%"
+      }, {
+        "indexId" : "java.binary.plus.expression",
+        "partOfTotalIndexingTime" : "3.5%"
+      } ],
+      "fastIndexers" : [ "DomFileIndex", "FrameworkDetectionIndex", "IdeaPluginRegistrationIndex", "PluginIdDependenciesIndex", "PluginIdModuleIndex", "RelaxSymbolIndex", "XsltSymbolIndex", "ant-imports", "devkit.ExtensionPointIndex", "fileIncludes", "xmlProperties" ]
+    }, {
+      "providerName" : "Library 'Maven: junit:junit:4.12'",
+      "totalNumberOfFiles" : 486,
+      "totalIndexingTime" : "845 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 286,
+        "totalFilesSize" : "598.06 kB",
+        "partOfTotalIndexingTime" : "59.6%",
+        "partOfTotalContentLoadingTime" : "23.3%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 195,
+        "totalFilesSize" : "570.17 kB",
+        "partOfTotalIndexingTime" : "36.2%",
+        "partOfTotalContentLoadingTime" : "76.6%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 3,
+        "totalFilesSize" : "23.04 kB",
+        "partOfTotalIndexingTime" : "4.0%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "380 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "43.6%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "28.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "12.3%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "11.7%"
+      }, {
+        "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+        "partOfTotalIndexingTime" : "3.4%"
+      } ],
+      "fastIndexers" : [ "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex" ]
+    }, {
+      "providerName" : "Library 'Maven: org.hamcrest:hamcrest-core:1.3'",
+      "totalNumberOfFiles" : 88,
+      "totalIndexingTime" : "178 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "CLASS",
+        "numberOfFiles" : 45,
+        "totalFilesSize" : "93.87 kB",
+        "partOfTotalIndexingTime" : "38.7%",
+        "partOfTotalContentLoadingTime" : "50.2%"
+      }, {
+        "fileType" : "JAVA",
+        "numberOfFiles" : 38,
+        "totalFilesSize" : "97.2 kB",
+        "partOfTotalIndexingTime" : "35.0%",
+        "partOfTotalContentLoadingTime" : "48.9%"
+      }, {
+        "fileType" : "HTML",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "356 B",
+        "partOfTotalIndexingTime" : "25.2%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "Manifest",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "514 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      }, {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "1.51 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "< 1%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "Stubs",
+        "partOfTotalIndexingTime" : "52.5%"
+      }, {
+        "indexId" : "IdIndex",
+        "partOfTotalIndexingTime" : "32.9%"
+      }, {
+        "indexId" : "bytecodeAnalysis",
+        "partOfTotalIndexingTime" : "8.1%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "partOfTotalIndexingTime" : "5.2%"
+      } ],
+      "fastIndexers" : [ "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex", "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex" ]
+    } ]
+  }
+}

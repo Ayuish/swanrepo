@@ -1,0 +1,607 @@
+2020-10-02 14:11:26,523 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:11:26,524 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:11:27,110 [    587]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 489 ms
+2020-10-02 14:11:27,580 [   1057]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:11:28,140 [   1617]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 560 ms
+2020-10-02 14:11:28,140 [   1617]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:11:28,332 [   1809]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:11:28,355 [   1832]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:11:28,620 [   2097]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2020-10-02 14:11:28,654 [   2131]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:11:28,655 [   2132]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:11:28,683 [   2160]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:11:28,683 [   2160]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 4a52056d
+2020-10-02 14:11:28,713 [   2190]   INFO - s.index.CompilerReferenceIndex - backward reference index version doesn't exist
+2020-10-02 14:11:28,842 [   2319]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 41 ms
+2020-10-02 14:11:30,193 [   3670]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 1204 ms
+2020-10-02 14:11:30,251 [   3728]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 1263 ms
+2020-10-02 14:11:30,262 [   3739]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:11:32,553 [   6030]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:11:33,244 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:11:33,244 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:11:33,471 [    227]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 193 ms
+2020-10-02 14:11:33,674 [    430]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 200 ms
+2020-10-02 14:11:33,952 [    708]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:11:34,191 [    947]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 239 ms
+2020-10-02 14:11:34,191 [    947]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:11:34,280 [   1036]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:11:34,288 [   1044]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:11:34,407 [   1163]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1187 ms
+2020-10-02 14:12:57,285 [  84041]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-02 14:15:30,166 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:15:30,175 [      9]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:15:31,114 [    948]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 804 ms
+2020-10-02 14:15:32,619 [   2453]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:15:33,710 [   3544]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1091 ms
+2020-10-02 14:15:33,710 [   3544]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:15:34,084 [   3918]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:15:34,118 [   3952]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:15:34,605 [   4439]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:15:34,657 [   4491]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:15:34,657 [   4491]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:15:34,684 [   4518]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:15:34,684 [   4518]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started f943c3cd
+2020-10-02 14:15:34,963 [   4797]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2020-10-02 14:15:36,396 [   6230]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 1156 ms
+2020-10-02 14:15:36,476 [   6310]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 1237 ms
+2020-10-02 14:15:36,491 [   6325]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:15:39,321 [   9155]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:15:39,334 [   9168]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:15:40,681 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:15:40,681 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:15:41,046 [    365]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 327 ms
+2020-10-02 14:15:41,274 [    593]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 226 ms
+2020-10-02 14:15:41,562 [    881]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:15:41,888 [   1207]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 326 ms
+2020-10-02 14:15:41,889 [   1208]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:15:41,999 [   1318]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:15:42,017 [   1336]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:15:42,293 [   1612]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1630 ms
+2020-10-02 14:18:59,017 [ 198336]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:18:59,037 [ 198356]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:18:59,037 [ 198356]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:18:59,045 [ 198364]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:18:59,045 [ 198364]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 45f46194
+2020-10-02 14:18:59,137 [ 198456]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 6 ms
+2020-10-02 14:19:00,105 [ 199424]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 878 ms
+2020-10-02 14:19:00,115 [ 199434]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 912 ms
+2020-10-02 14:19:00,136 [ 199455]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:19:01,623 [ 200942]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:19:01,641 [ 200960]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:19:02,252 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:19:02,252 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:19:02,576 [    324]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 277 ms
+2020-10-02 14:19:02,641 [    389]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 59 ms
+2020-10-02 14:19:02,722 [    470]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:19:02,996 [    744]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 273 ms
+2020-10-02 14:19:02,996 [    744]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:19:03,101 [    849]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:19:03,110 [    858]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:19:03,237 [    985]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1009 ms
+2020-10-02 14:19:51,668 [  49416]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:19:51,674 [  49422]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:19:51,674 [  49422]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:19:51,685 [  49433]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:19:51,685 [  49433]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started a55d5a58
+2020-10-02 14:19:51,782 [  49530]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:19:52,540 [  50288]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 712 ms
+2020-10-02 14:19:52,551 [  50299]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 726 ms
+2020-10-02 14:19:52,570 [  50318]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:19:54,040 [  51788]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:19:54,053 [  51801]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:19:54,857 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:19:54,858 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:19:55,151 [    294]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 247 ms
+2020-10-02 14:19:55,250 [    393]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 95 ms
+2020-10-02 14:19:55,361 [    504]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:19:55,652 [    795]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 290 ms
+2020-10-02 14:19:55,652 [    795]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:19:55,784 [    927]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:19:55,792 [    935]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:19:55,907 [   1050]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1071 ms
+2020-10-02 14:22:21,313 [ 146456]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:22:21,318 [ 146461]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:22:21,318 [ 146461]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:22:21,330 [ 146473]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:22:21,330 [ 146473]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 78f2b942
+2020-10-02 14:22:21,421 [ 146564]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 2 ms
+2020-10-02 14:22:22,138 [ 147281]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 681 ms
+2020-10-02 14:22:22,152 [ 147295]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 696 ms
+2020-10-02 14:22:22,170 [ 147313]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:22:23,628 [ 148771]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:22:23,645 [ 148788]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:22:24,455 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:22:24,456 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:22:24,746 [    291]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 239 ms
+2020-10-02 14:22:24,824 [    369]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 75 ms
+2020-10-02 14:22:24,922 [    467]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:22:25,148 [    693]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 226 ms
+2020-10-02 14:22:25,148 [    693]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:22:25,237 [    782]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:22:25,244 [    789]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:22:25,359 [    904]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 925 ms
+2020-10-02 14:23:23,972 [  59517]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:23:23,976 [  59521]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:23:23,976 [  59521]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:23:23,983 [  59528]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:23:23,983 [  59528]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 284d4753
+2020-10-02 14:23:24,061 [  59606]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 2 ms
+2020-10-02 14:23:24,796 [  60341]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 699 ms
+2020-10-02 14:23:24,808 [  60353]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 713 ms
+2020-10-02 14:23:24,827 [  60372]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:23:26,192 [  61737]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:23:26,205 [  61750]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:23:26,737 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:23:26,737 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:23:27,057 [    320]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 270 ms
+2020-10-02 14:23:27,108 [    371]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 47 ms
+2020-10-02 14:23:27,198 [    461]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:23:27,528 [    791]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 329 ms
+2020-10-02 14:23:27,528 [    791]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:23:27,620 [    883]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:23:27,627 [    890]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:23:27,740 [   1003]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1023 ms
+2020-10-02 14:23:40,718 [  13981]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:23:40,725 [  13988]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:23:40,725 [  13988]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:23:40,731 [  13994]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:23:40,732 [  13995]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started de600b28
+2020-10-02 14:23:40,810 [  14073]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 2 ms
+2020-10-02 14:23:41,530 [  14793]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 682 ms
+2020-10-02 14:23:41,541 [  14804]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 694 ms
+2020-10-02 14:23:41,557 [  14820]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:23:42,997 [  16260]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:23:43,016 [  16279]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:23:43,860 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:23:43,863 [      3]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:23:44,175 [    315]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 262 ms
+2020-10-02 14:23:44,225 [    365]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 46 ms
+2020-10-02 14:23:44,366 [    506]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:23:44,659 [    799]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 292 ms
+2020-10-02 14:23:44,659 [    799]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:23:44,771 [    911]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:23:44,780 [    920]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:23:44,953 [   1093]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1121 ms
+2020-10-02 14:23:48,297 [   4437]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:23:48,302 [   4442]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:23:48,302 [   4442]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:23:48,313 [   4453]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:23:48,313 [   4453]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started c8bdb7b8
+2020-10-02 14:23:48,396 [   4536]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:23:49,219 [   5359]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 775 ms
+2020-10-02 14:23:49,233 [   5373]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 791 ms
+2020-10-02 14:23:49,255 [   5395]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:23:50,674 [   6814]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:23:50,686 [   6826]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:23:51,316 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:23:51,317 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:23:51,611 [    295]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 247 ms
+2020-10-02 14:23:51,664 [    348]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 50 ms
+2020-10-02 14:23:51,759 [    443]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:23:52,016 [    700]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 257 ms
+2020-10-02 14:23:52,017 [    701]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:23:52,118 [    802]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:23:52,126 [    810]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:23:52,245 [    929]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 951 ms
+2020-10-02 14:25:57,692 [ 126376]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:25:57,697 [ 126381]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:25:57,697 [ 126381]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:25:57,709 [ 126393]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:25:57,709 [ 126393]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started a180d7f3
+2020-10-02 14:25:57,808 [ 126492]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:25:58,715 [ 127399]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 861 ms
+2020-10-02 14:25:58,725 [ 127409]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 873 ms
+2020-10-02 14:25:58,742 [ 127426]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:26:00,180 [ 128864]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:26:00,193 [ 128877]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:26:00,832 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:26:00,833 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:26:01,114 [    282]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 238 ms
+2020-10-02 14:26:01,164 [    332]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 47 ms
+2020-10-02 14:26:01,251 [    419]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:26:01,507 [    675]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 255 ms
+2020-10-02 14:26:01,507 [    675]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:26:01,593 [    761]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:26:01,601 [    769]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:26:01,718 [    886]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 903 ms
+2020-10-02 14:30:20,217 [ 259385]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:30:20,220 [ 259388]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:30:20,220 [ 259388]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:30:20,225 [ 259393]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:30:20,225 [ 259393]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started a0ec4ada
+2020-10-02 14:30:20,295 [ 259463]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 2 ms
+2020-10-02 14:30:21,006 [ 260174]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 676 ms
+2020-10-02 14:30:21,016 [ 260184]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 687 ms
+2020-10-02 14:30:21,031 [ 260199]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:30:22,415 [ 261583]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:30:22,430 [ 261598]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:30:23,460 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:30:23,461 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:30:23,741 [    281]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 232 ms
+2020-10-02 14:30:23,787 [    327]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 43 ms
+2020-10-02 14:30:23,871 [    411]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:30:24,172 [    712]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 300 ms
+2020-10-02 14:30:24,172 [    712]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:30:24,273 [    813]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:30:24,281 [    821]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:30:24,396 [    936]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 978 ms
+2020-10-02 14:33:06,876 [ 163416]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:33:06,880 [ 163420]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:33:06,880 [ 163420]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:33:06,886 [ 163426]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:33:06,886 [ 163426]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 6fc75d01
+2020-10-02 14:33:06,971 [ 163511]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2020-10-02 14:33:07,896 [ 164436]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 744 ms
+2020-10-02 14:33:07,905 [ 164445]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 754 ms
+2020-10-02 14:33:07,919 [ 164459]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:33:09,381 [ 165921]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:33:09,385 [ 165925]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:33:09,823 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:33:09,823 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:33:10,122 [    299]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 251 ms
+2020-10-02 14:33:10,166 [    343]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 42 ms
+2020-10-02 14:33:10,233 [    410]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:33:10,454 [    631]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 221 ms
+2020-10-02 14:33:10,454 [    631]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:33:10,541 [    718]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:33:10,548 [    725]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:33:10,662 [    839]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 858 ms
+2020-10-02 14:34:43,824 [  94001]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:34:43,830 [  94007]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:34:43,830 [  94007]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:34:43,838 [  94015]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:34:43,838 [  94015]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 36ad7f68
+2020-10-02 14:34:43,940 [  94117]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:34:44,743 [  94920]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 758 ms
+2020-10-02 14:34:44,760 [  94937]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 776 ms
+2020-10-02 14:34:44,775 [  94952]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:34:46,197 [  96374]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:34:46,209 [  96386]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:34:46,656 [      1]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:34:46,656 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:34:46,932 [    277]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 241 ms
+2020-10-02 14:34:46,991 [    336]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 56 ms
+2020-10-02 14:34:47,104 [    449]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:34:47,514 [    859]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 410 ms
+2020-10-02 14:34:47,514 [    859]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:34:47,633 [    978]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:34:47,649 [    994]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:34:47,865 [   1210]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1229 ms
+2020-10-02 14:40:50,599 [ 363944]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-02 14:41:54,994 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:41:54,995 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:41:56,547 [   1553]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1302 ms
+2020-10-02 14:41:57,166 [   2172]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:41:58,071 [   3077]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 904 ms
+2020-10-02 14:41:58,071 [   3077]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:41:58,295 [   3301]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:41:58,337 [   3343]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:42:00,055 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:42:00,056 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:42:00,592 [    537]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 367 ms
+2020-10-02 14:42:00,796 [    741]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 199 ms
+2020-10-02 14:42:01,092 [   1037]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:42:01,749 [   1694]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 657 ms
+2020-10-02 14:42:01,750 [   1695]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:42:01,930 [   1875]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:42:01,941 [   1886]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:42:02,318 [   2263]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2317 ms
+2020-10-02 14:42:13,060 [  13005]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:42:13,087 [  13032]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:42:13,087 [  13032]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:42:13,117 [  13062]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:42:13,118 [  13063]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 93fd8ab2
+2020-10-02 14:42:13,400 [  13345]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 5 ms
+2020-10-02 14:42:15,362 [  15307]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 1735 ms
+2020-10-02 14:42:15,435 [  15380]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 1827 ms
+2020-10-02 14:42:15,469 [  15414]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:42:19,261 [  19206]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:42:19,277 [  19222]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:42:20,384 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:42:20,385 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:42:21,195 [    811]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 676 ms
+2020-10-02 14:42:21,349 [    965]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 130 ms
+2020-10-02 14:42:21,566 [   1182]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:42:22,184 [   1800]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 617 ms
+2020-10-02 14:42:22,188 [   1804]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:42:22,449 [   2065]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:42:22,469 [   2085]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:42:22,822 [   2438]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2485 ms
+2020-10-02 14:45:13,032 [ 172648]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:45:13,041 [ 172657]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:45:13,041 [ 172657]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:45:13,054 [ 172670]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:45:13,055 [ 172671]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started beec2c
+2020-10-02 14:45:13,138 [ 172754]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:45:13,952 [ 173568]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 753 ms
+2020-10-02 14:45:13,965 [ 173581]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 772 ms
+2020-10-02 14:45:13,990 [ 173606]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:45:15,602 [ 175218]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:45:15,619 [ 175235]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:45:16,371 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:45:16,372 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:45:16,786 [    415]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 341 ms
+2020-10-02 14:45:16,898 [    527]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 105 ms
+2020-10-02 14:45:17,051 [    680]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:45:17,371 [   1000]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 319 ms
+2020-10-02 14:45:17,371 [   1000]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:45:17,472 [   1101]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:45:17,481 [   1110]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:45:17,634 [   1263]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1295 ms
+2020-10-02 14:45:56,675 [  40304]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:45:56,680 [  40309]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:45:56,680 [  40309]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:45:56,694 [  40323]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:45:56,695 [  40324]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started b95eaa99
+2020-10-02 14:45:56,793 [  40422]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:45:57,746 [  41375]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 916 ms
+2020-10-02 14:45:57,759 [  41388]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 931 ms
+2020-10-02 14:45:57,779 [  41408]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:45:59,370 [  42999]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:45:59,399 [  43028]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:46:00,453 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:46:00,454 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:46:01,038 [    585]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 505 ms
+2020-10-02 14:46:01,114 [    661]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 70 ms
+2020-10-02 14:46:01,288 [    835]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:46:01,674 [   1221]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 385 ms
+2020-10-02 14:46:01,674 [   1221]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:46:01,807 [   1354]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:46:01,817 [   1364]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:46:01,952 [   1499]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1531 ms
+2020-10-02 14:50:48,890 [ 288437]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:50:48,894 [ 288441]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:50:48,895 [ 288442]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:50:48,905 [ 288452]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:50:48,905 [ 288452]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 91372d6
+2020-10-02 14:50:49,044 [ 288591]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:50:50,010 [ 289557]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 911 ms
+2020-10-02 14:50:50,023 [ 289570]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 926 ms
+2020-10-02 14:50:50,039 [ 289586]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:50:51,728 [ 291275]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:50:51,746 [ 291293]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:50:52,626 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:50:52,627 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:50:52,935 [    309]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 257 ms
+2020-10-02 14:50:52,996 [    370]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 58 ms
+2020-10-02 14:50:53,094 [    468]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:50:53,382 [    756]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 287 ms
+2020-10-02 14:50:53,382 [    756]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:50:53,480 [    854]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:50:53,488 [    862]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:50:53,609 [    983]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1005 ms
+2020-10-02 14:51:19,264 [  26638]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-02 14:51:37,433 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:51:37,434 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:51:37,814 [    381]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 311 ms
+2020-10-02 14:51:37,986 [    553]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:51:38,297 [    864]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 310 ms
+2020-10-02 14:51:38,297 [    864]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:51:38,401 [    968]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:51:38,411 [    978]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:51:38,549 [   1116]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:51:38,552 [   1119]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:51:38,552 [   1119]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:51:38,557 [   1124]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:51:38,557 [   1124]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 4009ebff
+2020-10-02 14:51:38,644 [   1211]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2020-10-02 14:51:40,122 [   2689]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 734 ms
+2020-10-02 14:51:40,135 [   2702]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 749 ms
+2020-10-02 14:51:40,151 [   2718]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:51:41,744 [   4311]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:51:41,762 [   4329]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:51:42,322 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:51:42,323 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:51:42,632 [    310]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 257 ms
+2020-10-02 14:51:42,695 [    373]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 60 ms
+2020-10-02 14:51:42,783 [    461]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:51:43,059 [    737]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 275 ms
+2020-10-02 14:51:43,059 [    737]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:51:43,169 [    847]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:51:43,177 [    855]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:51:43,307 [    985]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1010 ms
+2020-10-02 14:51:48,609 [   6287]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:51:48,613 [   6291]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:51:48,613 [   6291]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:51:48,625 [   6303]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:51:48,625 [   6303]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 425a01d5
+2020-10-02 14:51:48,778 [   6456]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 14 ms
+2020-10-02 14:51:49,716 [   7394]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 883 ms
+2020-10-02 14:51:49,729 [   7407]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 898 ms
+2020-10-02 14:51:49,749 [   7427]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:51:51,430 [   9108]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:51:51,449 [   9127]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:51:52,065 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:51:52,065 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:51:52,357 [    292]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 250 ms
+2020-10-02 14:51:52,414 [    349]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 52 ms
+2020-10-02 14:51:52,492 [    427]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:51:52,773 [    708]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 281 ms
+2020-10-02 14:51:52,773 [    708]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:51:52,889 [    824]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:51:52,897 [    832]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:51:53,023 [    958]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 980 ms
+2020-10-02 14:51:58,945 [   6880]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2020-10-02 14:51:58,950 [   6885]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:51:58,950 [   6885]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:51:58,961 [   6896]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:51:58,962 [   6897]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 2618c966
+2020-10-02 14:51:59,076 [   7011]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
+2020-10-02 14:51:59,950 [   7885]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 835 ms
+2020-10-02 14:51:59,965 [   7900]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 852 ms
+2020-10-02 14:51:59,988 [   7923]   INFO - s.incremental.java.JavaBuilder - Compiling 2 java files; module: jwinnow
+2020-10-02 14:52:01,741 [   9676]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2020-10-02 14:52:01,762 [   9697]   INFO - s.incremental.java.JavaBuilder - javac 15 was used to compile [jwinnow]
+2020-10-02 14:52:02,349 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:52:02,350 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:52:02,665 [    316]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 273 ms
+2020-10-02 14:52:02,724 [    375]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 56 ms
+2020-10-02 14:52:02,819 [    470]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:52:03,116 [    767]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 296 ms
+2020-10-02 14:52:03,116 [    767]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:52:03,249 [    900]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:52:03,259 [    910]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:52:03,402 [   1053]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1079 ms
+2020-10-02 14:52:08,377 [   6028]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-02 14:54:29,399 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:54:29,466 [     67]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:54:30,872 [   1473]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1122 ms
+2020-10-02 14:54:31,284 [   1885]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:54:32,032 [   2633]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 748 ms
+2020-10-02 14:54:32,032 [   2633]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:54:32,374 [   2975]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:54:32,437 [   3038]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:54:33,932 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:54:33,933 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:54:34,644 [    712]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 624 ms
+2020-10-02 14:54:34,920 [    988]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 269 ms
+2020-10-02 14:54:35,204 [   1272]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/jwinnow, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:54:35,680 [   1748]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 476 ms
+2020-10-02 14:54:35,681 [   1749]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 0 libraries
+2020-10-02 14:54:35,846 [   1914]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:54:35,862 [   1930]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:54:36,250 [   2318]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2376 ms
+2020-10-02 14:55:16,245 [  42313]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-02 14:56:08,308 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:56:08,324 [     16]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:56:09,190 [    882]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 769 ms
+2020-10-02 14:56:09,637 [   1329]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:56:10,527 [   2219]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 889 ms
+2020-10-02 14:56:10,527 [   2219]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:56:10,845 [   2537]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:56:10,853 [   2545]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:56:11,172 [   2864]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2020-10-02 14:56:11,200 [   2892]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2020-10-02 14:56:11,201 [   2893]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: true
+2020-10-02 14:56:11,232 [   2924]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2020-10-02 14:56:11,233 [   2925]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started ce60acb9
+2020-10-02 14:56:11,245 [   2937]   INFO - s.index.CompilerReferenceIndex - backward reference index version doesn't exist
+2020-10-02 14:56:11,388 [   3080]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 45 ms
+2020-10-02 14:56:13,101 [   4793]   INFO - kotlin.jps.build.KotlinBuilder - KotlinTargetsIndex created in 1550 ms
+2020-10-02 14:56:13,173 [   4865]   INFO - kotlin.jps.build.KotlinBuilder - Total Kotlin global compile context initialization time: 1623 ms
+2020-10-02 14:56:13,216 [   4908]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: jwinnow
+2020-10-02 14:56:13,546 [   5238]   INFO - jps.cmdline.ClasspathBootstrap - 
+java.lang.NullPointerException
+	at java.base/java.io.File.<init>(File.java:279)
+	at org.jetbrains.jps.cmdline.ClasspathBootstrap.getResourceFile(ClasspathBootstrap.java:170)
+	at org.jetbrains.jps.cmdline.ClasspathBootstrap.getExternalJavacProcessClasspath(ClasspathBootstrap.java:139)
+	at org.jetbrains.jps.javac.ExternalJavacManager.launchExternalJavacProcess(ExternalJavacManager.java:372)
+	at org.jetbrains.jps.javac.ExternalJavacManager.forkJavac(ExternalJavacManager.java:156)
+	at org.jetbrains.jps.incremental.java.JavaBuilder.compileJava(JavaBuilder.java:501)
+	at org.jetbrains.jps.incremental.java.JavaBuilder.compile(JavaBuilder.java:344)
+	at org.jetbrains.jps.incremental.java.JavaBuilder.doBuild(JavaBuilder.java:269)
+	at org.jetbrains.jps.incremental.java.JavaBuilder.build(JavaBuilder.java:222)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runModuleLevelBuilders(IncProjectBuilder.java:1448)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuildersForChunk(IncProjectBuilder.java:1126)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildTargetsChunk(IncProjectBuilder.java:1193)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunkIfAffected(IncProjectBuilder.java:1087)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunks(IncProjectBuilder.java:853)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:443)
+	at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:184)
+	at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:135)
+	at org.jetbrains.jps.cmdline.BuildSession.runBuild(BuildSession.java:294)
+	at org.jetbrains.jps.cmdline.BuildSession.run(BuildSession.java:127)
+	at org.jetbrains.jps.cmdline.BuildMain$MyMessageHandler.lambda$channelRead0$0(BuildMain.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-10-02 14:56:22,042 [  13734]   INFO - s.incremental.java.JavaBuilder - Compiling 4 java files; module: jwinnow (tests)
+2020-10-02 14:56:22,492 [  14184]   INFO - rains.jps.cmdline.BuildSession - Build duration: Builder 'NotNull instrumentation' took 61 ms; 0 sources processed
+2020-10-02 14:56:22,493 [  14185]   INFO - rains.jps.cmdline.BuildSession - Build duration: Builder 'Java' took 8 s 911 ms; 5 sources processed (1782 ms per file)
+2020-10-02 14:56:22,510 [  14202]   INFO - s.incremental.java.JavaBuilder - javac 11 was used to compile [jwinnow]
+2020-10-02 14:56:31,263 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:56:31,301 [     38]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:56:32,082 [    819]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 571 ms
+2020-10-02 14:56:32,269 [   1006]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 184 ms
+2020-10-02 14:56:32,589 [   1326]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:56:33,870 [   2607]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1280 ms
+2020-10-02 14:56:33,870 [   2607]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:56:34,462 [   3199]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:56:34,546 [   3283]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:56:35,099 [   3836]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 4020 ms
+2020-10-02 14:56:49,793 [  18530]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 14:56:50,434 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:56:50,435 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:56:51,210 [    776]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 660 ms
+2020-10-02 14:56:51,409 [    975]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 189 ms
+2020-10-02 14:56:51,588 [   1154]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:56:52,136 [   1702]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 548 ms
+2020-10-02 14:56:52,136 [   1702]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:56:52,400 [   1966]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:56:52,409 [   1975]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:56:52,668 [   2234]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2288 ms
+2020-10-02 14:57:06,158 [  15724]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 14:57:07,187 [      1]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:57:07,187 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:57:07,815 [    629]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 515 ms
+2020-10-02 14:57:07,899 [    713]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 78 ms
+2020-10-02 14:57:08,091 [    905]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:57:08,575 [   1389]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 483 ms
+2020-10-02 14:57:08,575 [   1389]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:57:08,805 [   1619]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:57:08,821 [   1635]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:57:09,008 [   1822]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1853 ms
+2020-10-02 14:57:46,612 [  39426]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 14:57:47,773 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:57:47,773 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:57:48,277 [    504]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 443 ms
+2020-10-02 14:57:48,383 [    610]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 101 ms
+2020-10-02 14:57:48,663 [    890]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:57:49,110 [   1337]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 447 ms
+2020-10-02 14:57:49,111 [   1338]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:57:49,325 [   1552]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:57:49,334 [   1561]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:57:49,478 [   1705]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1749 ms
+2020-10-02 14:57:52,029 [   4256]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 14:57:53,057 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 14:57:53,058 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 14:57:53,558 [    501]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 429 ms
+2020-10-02 14:57:53,627 [    570]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 64 ms
+2020-10-02 14:57:53,831 [    774]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 14:57:54,249 [   1192]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 417 ms
+2020-10-02 14:57:54,249 [   1192]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 14:57:54,445 [   1388]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 14:57:54,454 [   1397]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 14:57:54,617 [   1560]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1591 ms
+2020-10-02 15:01:47,893 [ 234836]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 15:01:52,166 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 15:01:52,167 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 15:01:52,912 [    746]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 670 ms
+2020-10-02 15:01:53,186 [   1020]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 246 ms
+2020-10-02 15:01:53,575 [   1409]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 15:01:54,443 [   2277]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 868 ms
+2020-10-02 15:01:54,444 [   2278]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 15:01:54,675 [   2509]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 15:01:54,686 [   2520]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 15:01:54,880 [   2714]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2748 ms
+2020-10-02 15:03:16,264 [  84098]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2020-10-02 15:03:16,957 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-02 15:03:16,957 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/252/plugins/java/lib/jps-launcher.jar
+2020-10-02 15:03:17,725 [    768]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 630 ms
+2020-10-02 15:03:17,803 [    846]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 71 ms
+2020-10-02 15:03:17,886 [    929]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-02 15:03:18,197 [   1240]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 310 ms
+2020-10-02 15:03:18,197 [   1240]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-02 15:03:18,447 [   1490]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-02 15:03:18,454 [   1497]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-02 15:03:18,584 [   1627]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1660 ms
+2020-10-02 15:09:30,620 [ 373663]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2020-10-12 16:59:58,474 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-12 16:59:58,513 [     39]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/257/plugins/java/lib/jps-launcher.jar
+2020-10-12 17:00:01,480 [   3006]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 2736 ms
+2020-10-12 17:00:02,369 [   3895]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-12 17:00:03,529 [   5055]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1159 ms
+2020-10-12 17:00:03,529 [   5055]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-12 17:00:04,229 [   5755]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-12 17:00:04,280 [   5806]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-12 17:00:06,739 [      1]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2020-10-12 17:00:06,739 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /snap/intellij-idea-community/257/plugins/java/lib/jps-launcher.jar
+2020-10-12 17:00:07,648 [    910]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 765 ms
+2020-10-12 17:00:07,972 [   1234]   INFO -    #com.intellij.jna.JnaLoader - JNA library (64-bit) loaded in 320 ms
+2020-10-12 17:00:08,341 [   1603]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/vinay/Downloads/DocumentFingerprint_Winnowing-main, global options path = /home/vinay/.config/JetBrains/IdeaIC2020.2/options
+2020-10-12 17:00:09,481 [   2743]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1140 ms
+2020-10-12 17:00:09,482 [   2744]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 3 libraries
+2020-10-12 17:00:09,828 [   3090]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=500; buffer=10; max=680
+2020-10-12 17:00:09,840 [   3102]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes
+2020-10-12 17:00:10,209 [   3471]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 3497 ms
+2020-10-12 17:13:41,388 [ 814650]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.

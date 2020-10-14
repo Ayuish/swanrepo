@@ -1,6 +1,0 @@
-*.o
-.flavor
-.objs
-esb_proj.so
-assets.h
-cert
