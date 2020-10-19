@@ -10,10 +10,24 @@
 #include <ctype.h>          
 #include <arpa/inet.h>
 #include <netdb.h>
+#include <pthread.h>
 
 #define PORT 20000 
 #define BACKLOG 5
 #define LENGTH 512 
+
+
+//how to pass path of a file to this thread ?
+ 
+void* thread_function(void* args)
+{
+	int i=0;
+    while(i<2)
+    {
+        printf("I am threadFunction and ??===\n");
+		i++;
+    }
+}
 
 void error(const char *msg)
 {
@@ -76,7 +90,20 @@ int main ()
 			printf("[Server] Server has got connected from %s.\n", inet_ntoa(addr_remote.sin_addr));
 
 		/*Receive File from Client */
-		char* fr_name = "/home/vinay/Desktop/bmd.xml";
+		char* fr_name = "/home/vinay/Desktop/recieved.xml";
+		pthread_t thread_id;
+		int ret;
+		ret=pthread_create(&thread_id,NULL,&thread_function,&fr_name);
+		if(ret==0)
+		{
+			printf("thread cretaed successfully\n");
+
+		}
+		else
+		{
+			printf("Thread not created successfully\n");
+		}
+		
 		FILE *fr = fopen(fr_name, "a");
 		if(fr == NULL)
 			printf("File %s Cannot be opened file on server.\n", fr_name);

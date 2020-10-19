@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 	/* Send File to Server */
 	//if(!fork())
 	//{
-		char* fs_name = "/home/vinay/Desktop/bmd.xml";
+		char* fs_name = "/home/vinay/Desktop/bmd_1.xml";
 		char sdbuf[LENGTH]; 
 		printf("[Client] Sending %s to the Server...", fs_name);
 		FILE *fs = fopen(fs_name, "r");
