@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 	/* Send File to Server */
 	//if(!fork())
 	//{
-		char* fs_name = "/home/vinay/Desktop/output.txt";
+		char* fs_name = "/home/vinay/Desktop/bmd.xml";
 		char sdbuf[LENGTH]; 
 		printf("[Client] Sending %s to the Server...", fs_name);
 		FILE *fs = fopen(fs_name, "r");
@@ -77,10 +77,11 @@ int main(int argc, char *argv[])
 	    printf("Ok File %s from Client was Sent!\n", fs_name);
 	    //success = 1;
 	//}
-
+	
 	/* Receive File from Server */
-	printf("[Client] Receiveing file from Server and saving it as final.txt...");
-	char* fr_name = "/home/vinay/Desktop/testing/final.txt";
+	/*
+	printf("[Client] Receiveing file from Server and saving it as final.xml...");
+	char* fr_name = "/home/vinay/Desktop/testing    ";
 	FILE *fr = fopen(fr_name, "a");
 	if(fr == NULL)
 		printf("File %s Cannot be opened.\n", fr_name);
@@ -113,6 +114,7 @@ int main(int argc, char *argv[])
 	        fclose(fr);
 	    //}
 	}
+	*/
 	close (sockfd);
 	printf("[Client] Connection lost.\n");
 	return (0);

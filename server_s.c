@@ -76,7 +76,7 @@ int main ()
 			printf("[Server] Server has got connected from %s.\n", inet_ntoa(addr_remote.sin_addr));
 
 		/*Receive File from Client */
-		char* fr_name = "/home/aryan/Desktop/receive.txt";
+		char* fr_name = "/home/vinay/Desktop/bmd.xml";
 		FILE *fr = fopen(fr_name, "a");
 		if(fr == NULL)
 			printf("File %s Cannot be opened file on server.\n", fr_name);
@@ -87,7 +87,7 @@ int main ()
 			//int success = 0;
 			//while(success == 0)
 			//{
-			    while(fr_block_sz = recv(nsockfd, revbuf, LENGTH, 0)) //could it be sockfd?
+			    while(fr_block_sz = recv(nsockfd, revbuf, LENGTH, 0)) 
 			    {
 			        if(fr_block_sz == 0)
 			        {
@@ -110,12 +110,14 @@ int main ()
 		}
 
 		/* Call the Script */
-		system("cd ; chmod +x script.sh ; ./script.sh");
+		//system("cd ; chmod +x script.sh ; ./script.sh");
 
 		/* Send File to Client */
 	    //if(!fork())
 	    //{
-	        char* fs_name = "/home/vinay/Desktop/output.txt";
+			
+			/*
+	        char* fs_name = "/home/vinay/Desktop/testing/bmd_1.xml";
 	        char sdbuf[LENGTH]; // Send buffer
 	        printf("[Server] Sending %s to the Client...", fs_name);
 	        FILE *fs = fopen(fs_name, "r");
@@ -137,6 +139,7 @@ int main ()
 	            bzero(sdbuf, LENGTH);
 	        }
 	        printf("Ok sent to client!\n");
+			*/
 	        success = 1;
 	        close(nsockfd);
 	        printf("[Server] Connection with Client closed. Server will wait now...\n");
