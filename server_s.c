@@ -19,13 +19,13 @@
 
 //how to pass path of a file to this thread ?
  
-void* thread_function(void* args)
+void* thread_function(char* args)
 {
 	int i=0;
     while(i<2)
     {
-        printf("I am threadFunction and ??===\n");
-		i++;
+        printf("I am thread_function and path of the file recieved from clien end is %s \n",args);
+		i=i+2;
     }
 }
 
@@ -93,10 +93,10 @@ int main ()
 		char* fr_name = "/home/vinay/Desktop/recieved.xml";
 		pthread_t thread_id;
 		int ret;
-		ret=pthread_create(&thread_id,NULL,&thread_function,&fr_name);
+		ret=pthread_create(&thread_id,NULL,&thread_function,fr_name);
 		if(ret==0)
 		{
-			printf("thread cretaed successfully\n");
+			printf("Thread cretaed successfully \n");
 
 		}
 		else
