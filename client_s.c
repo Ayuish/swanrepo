@@ -78,43 +78,7 @@ int main(int argc, char *argv[])
 	    //success = 1;
 	//}
 	
-	/* Receive File from Server */
-	/*
-	printf("[Client] Receiveing file from Server and saving it as final.xml...");
-	char* fr_name = "/home/vinay/Desktop/testing    ";
-	FILE *fr = fopen(fr_name, "a");
-	if(fr == NULL)
-		printf("File %s Cannot be opened.\n", fr_name);
-	else
-	{
-	    bzero(revbuf, LENGTH); 
-	    int fr_block_sz = 0;
-	   // int success = 0;
-	    //while(success == 0)
-	    //{
-	        while((fr_block_sz = recv(sockfd, revbuf, LENGTH, 0))>=0)
-	        {
-	            if(fr_block_sz ==0)
-	            {
-	                break;
-	            }
-	            int write_sz = fwrite(revbuf, sizeof(char), fr_block_sz, fr);
-	            if(write_sz < fr_block_sz)
-	            {
-	                error("File write failed.\n");
-	            }
-				else if(fr_block_sz<0)
-				{
-					error("Receive file error .\n");
-				}
-	           // bzero(revbuf, LENGTH);
-	        }
-	        printf("Ok received from server!\n");
-	       // success = 1;
-	        fclose(fr);
-	    //}
-	}
-	*/
+	
 	close (sockfd);
 	printf("[Client] Connection lost.\n");
 	return (0);

@@ -109,37 +109,7 @@ int main ()
 			//}
 		}
 
-		/* Call the Script */
-		//system("cd ; chmod +x script.sh ; ./script.sh");
-
-		/* Send File to Client */
-	    //if(!fork())
-	    //{
-			
-			/*
-	        char* fs_name = "/home/vinay/Desktop/testing/bmd_1.xml";
-	        char sdbuf[LENGTH]; // Send buffer
-	        printf("[Server] Sending %s to the Client...", fs_name);
-	        FILE *fs = fopen(fs_name, "r");
-	        if(fs == NULL)
-	        {
-	            printf("ERROR: File %s not found on server.\n", fs_name);
-				exit(1);
-	        }
-
-	        bzero(sdbuf, LENGTH); 
-	        int fs_block_sz; 
-	        while((fs_block_sz = fread(sdbuf, sizeof(char), LENGTH, fs))>0)
-	        {
-	            if(send(nsockfd, sdbuf, fs_block_sz, 0) < 0)
-	            {
-	                printf("ERROR: Failed to send file %s.\n", fs_name);
-	                exit(1);
-	            }
-	            bzero(sdbuf, LENGTH);
-	        }
-	        printf("Ok sent to client!\n");
-			*/
+	
 	        success = 1;
 	        close(nsockfd);
 	        printf("[Server] Connection with Client closed. Server will wait now...\n");
