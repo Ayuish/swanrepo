@@ -1,6 +1,6 @@
 /*
 BMD XML document parsing
-navigate through XML document and stroe the content in it .
+navigate through XML document and store the content in it .
 Parse a XML to a tree , use xmlDocGetRootElement() to get the root element
 then walk through the document and store all element name in a bmd_message struct
 */
@@ -37,7 +37,7 @@ int is_leaf(xmlNode *node)
     return 1;
 }
 
-/*extracting contents from a XML document and stroing
+/*extracting contents from a XML document and storing
 and if node type id element it is leaf
 */
 
@@ -50,7 +50,7 @@ void extract_envelope_utils(xmlNode * node,bmd_envelope* bm)
         {
             if(is_leaf(node))
             {
-                n=strlen((char*)xmlNodeGetContent(node));
+                n=strlen((char *)xmlNodeGetContent(node));
                 //MessageId
                 if((strcmp(((char *)node->name),attributes[0]))==0)
                 {
@@ -137,7 +137,7 @@ void extract_envelope_utils(xmlNode * node,bmd_envelope* bm)
 }
 
 
-//extarcting bmd_envelope
+//extracting bmd_envelope
 
 bmd_envelope * extract_envelope(char * filepath)
 {
