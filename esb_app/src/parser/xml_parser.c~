@@ -10,7 +10,7 @@ then walk through the document and store all element name in a bmd_message struc
 #include<stdlib.h>
 #include<string.h>
 #include<errno.h>
-#include "../parser/xml.h"
+#include "xml.h"
 
 char * attributes[7]={
     "MessageID",
@@ -228,7 +228,7 @@ char * extract_payload(char * filepath)
 
     int main()
     {
-        char filepath[100]="home/vinay/Desktop/dum.xml";
+        char filepath[100]="home/vinay/Desktop/recieved.xml";
         bmd *bd=(bmd *)malloc(sizeof(bmd));
         bd=parse_bmd_xml(filepath);
         printf("\n");
