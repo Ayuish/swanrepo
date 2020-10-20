@@ -21,7 +21,7 @@ typedef struct
 
 typedef struct 
 {
-  bmd_envelope * envelope;
+  bmd_envelope * envl;
   char * payload;
 } bmd;
 
