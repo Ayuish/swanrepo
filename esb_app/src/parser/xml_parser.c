@@ -172,11 +172,19 @@ bmd_envelope * extract_envelope(char * filepath)
 bmd * parse_bmd_xml(char * filepath)
 {
    printf("XML PARSING\n");
+   printf("Parsing the XML ...\n");
+   sleep(2);
    bmd  * bd = (bmd*) malloc (sizeof(bmd));
    bd->envelope=  extract_envelope(filepath);
    printf("MessageID is %s\n",bd->envelope->MessageID);
+   printf("MessageType is %s\n",bd->envelope->MessageType);
+   printf("Sender is %s\n",bd->envelope->Sender);
+   printf("Destination is %s\n",bd->envelope->Destination);
+   printf("ReferenceId is %s\n",bd->envelope->ReferenceID);
+   printf("Creation Date and Time  is %s\n",bd->envelope->CreationDateTime);
+   printf("Signature is %s\n",bd->envelope->Signature);
    bd->payload= extract_payload(filepath);
-   printf("Hello There\n");
+   
    return bd;
 }
 
@@ -311,7 +319,7 @@ long int find_size(char  * file_name)
 int main()
 {
 
-    char  filepath[100] = "try.xml";
+    char  filepath[100] = "recieved_bmd.xml";
     bmd  * bd = (bmd*) malloc (sizeof(bmd));
     bd= parse_bmd_xml(filepath);
   //  validate_xml_file(bd)? printf("1"): printf("2");

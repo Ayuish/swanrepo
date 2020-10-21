@@ -90,7 +90,7 @@ int main ()
 			printf("[Server] Server has got connected from %s.\n", inet_ntoa(addr_remote.sin_addr));
 
 		/*Receive File from Client */
-		char* fr_name = "/home/vinay/Desktop/recieved.xml";
+		char* fr_name = "/home/vinay/Desktop/swan/esb_app/src/parser/recieved_bmd.xml";
 		pthread_t thread_id;
 		int ret;
 		ret=pthread_create(&thread_id,NULL,&thread_function,fr_name);
