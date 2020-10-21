@@ -4,6 +4,13 @@
 
 /*Required C standard libraries*/
 
+/* Compilation command if you are not building and trying to run on terminal
+
+gcc -o out insert_into_esb_request.c `mysql_config --cflags --libs`
+
+====
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -27,6 +34,14 @@
 esb_request(sender_id,dest_id,message_type,reference_id,     \
 message_id,data_location,status,status_details,received_on)  \
 VALUES(?,?,?,?,?,?,?,?,?)"
+
+int finish_with_error(MYSQL *con)
+{
+
+    fprintf(stderr, "Error [%d]: %s \n", mysql_errno(con), mysql_error(con));
+    mysql_close(con);
+    return -1;
+}
 
 int insert_to_esb_request(char *sender_id, char *dest_id,
                           char *message_type, char *reference_id, char *message_id,
@@ -242,3 +257,13 @@ int insert_to_esb_request(char *sender_id, char *dest_id,
 
 }
 #endif
+/*
+int main() {
+    char *s,*d,*mt,*rid,*mid,*dl,*st,*std;
+    s="sender4"; d = "dest3"; mt = "CreditReports"; mid = "2";
+    dl = "dat_loc"; st ="Active"; std="process";
+    rid = "ref_id1";
+    insert_to_esb_request(s,d,mt,rid,mid,dl,st,std,"2020-08-12T05:18:00+00001");
+    return 0;
+}
+*/
