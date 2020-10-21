@@ -21,7 +21,7 @@ typedef struct
 
 typedef struct 
 {
-  bmd_envelope * envl;
+  bmd_envelope * envelope;
   char * payload;
 } bmd;
 
@@ -48,6 +48,5 @@ char * attributes[7] =  {
 };
  
  */
-
 
  #endif
