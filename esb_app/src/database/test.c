@@ -90,6 +90,6 @@ static const  MunitSuite suite = {
 #include <stdlib.h>
 
 int main(int argc,const char* argv[]) {
-    char *user_data = "file.xml";
+    char *user_data = "/home/rajashekhar/nho2020b2/swan/esb_app/src/parser/try.xml";
     return munit_suite_main(&suite, (void *)user_data, argc, (char *const *) argv);
 }
