@@ -24,5 +24,6 @@ int insert_into_esb_request(char *sender_id, char *dest_id,
                           char *message_type, char *reference_id, char *message_id,
                           char *data_location, char *status, char *status_details, char *received_on);
 int get_active_route_id(char *sender_id,char *destination_id, char *message_type);
+int update_esb_request(char * status,int id);
 
 #endif //DATABASE_CONNECTOR_H

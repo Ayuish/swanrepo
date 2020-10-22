@@ -124,7 +124,7 @@ int update_esb_request(char * status,int id)
    }
 
 // commenting  the main
-
+/*
  int main(int argc ,char ** argv)
  {
     char *status="PROCESSING";
@@ -132,6 +132,6 @@ int update_esb_request(char * status,int id)
     update_esb_request(status,id);
     return 0;
  }
-
+*/
 
 
