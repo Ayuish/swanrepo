@@ -39,7 +39,7 @@ int update_esb_request(char * status,int id)
     //check if connection is properly established or not
     if(mysql_real_connect(con,HOST,USER,PASS,DB_NAME,PORT,UNIX_SOCKET,FLAG)==NULL)
     {
-        fprintf(stderr,"Error [%d]:%s\n",mysql_error(con),mysql_error(con));
+        fprintf(stderr,"Error [%s]:%s\n",mysql_error(con),mysql_error(con));
         mysql_close(con); //close the connection
         return -1;
     }
@@ -124,7 +124,7 @@ int update_esb_request(char * status,int id)
    }
 
 // commenting  the main
-/*
+
  int main(int argc ,char ** argv)
  {
     char *status="PROCESSING";
@@ -132,6 +132,6 @@ int update_esb_request(char * status,int id)
     update_esb_request(status,id);
     return 0;
  }
- */
+
 
 

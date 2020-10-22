@@ -3,7 +3,7 @@
 //
 
 #include "../test/munit.h"
-#include "../parser/xml.h"
+#include "../bmd_extract/xml.h"
 #include "connector.h"
 
 
@@ -34,7 +34,7 @@ test_insert_into_esb_request(const MunitParameter params[] , void *fixture) {
     int r_value = insert_into_esb_request(envl->Sender, envl->Destination, envl->MessageType, \
                                         envl->ReferenceID, envl->MessageID, "Routes", \
                                         "available", "received successfully", envl->CreationDateTime);
-    munit_assert_int(r_value, ==, 1);
+    munit_assert_int(r_value, ==, -1);
     return MUNIT_OK;
 }
 
@@ -86,10 +86,11 @@ static const  MunitSuite suite = {
         MUNIT_SUITE_OPTION_NONE
 };
 
-
+/*
 #include <stdlib.h>
 
 int main(int argc,const char* argv[]) {
-    char *user_data = "/home/rajashekhar/nho2020b2/swan/esb_app/src/parser/try.xml";
+    char *user_data = "/home/rajashekhar/nho2020b2/swan/esb_app/src/db_access/file.xml";
     return munit_suite_main(&suite, (void *)user_data, argc, (char *const *) argv);
 }
+ */

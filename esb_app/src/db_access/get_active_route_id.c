@@ -221,7 +221,6 @@ int get_active_route_id(char *sender_id,char *destination_id, char *message_type
     /* returns number of rows in result */
     return -1;
 }
-
 /*
 int main(int argc, char **argv) {
     char *sender = "A";
@@ -231,4 +230,4 @@ int main(int argc, char **argv) {
     printf("id = %d",id);
     return 0;
 }
- */
+*/
