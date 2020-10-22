@@ -264,4 +264,14 @@ int main()
     return 0;
 }
 
+/*
+    int main()
+    {
+        char filepath[100]="try.xml";
+        bmd *bd=(bmd *)malloc(sizeof(bmd));
+        bd=parse_bmd_xml(filepath);
+        printf("\n");
+        return 0;
+    }
 
+ */

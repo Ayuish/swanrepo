@@ -35,15 +35,7 @@ esb_request(sender_id,dest_id,message_type,reference_id,     \
 message_id,data_location,status,status_details,received_on)  \
 VALUES(?,?,?,?,?,?,?,?,?)"
 
-int finish_with_error(MYSQL *con)
-{
-
-    fprintf(stderr, "Error [%d]: %s \n", mysql_errno(con), mysql_error(con));
-    mysql_close(con);
-    return -1;
-}
-
-int insert_to_esb_request(char *sender_id, char *dest_id,
+int insert_into_esb_request(char *sender_id, char *dest_id,
                           char *message_type, char *reference_id, char *message_id,
                           char *data_location, char *status, char *status_details, char *received_on)
 {
@@ -249,7 +241,7 @@ int insert_to_esb_request(char *sender_id, char *dest_id,
         fprintf(stderr, " %s\n", mysql_stmt_error(stmt));
         return -1;
     }
-   
+
 
     /*No error occurred and insert is successful*/
     mysql_close(con);
