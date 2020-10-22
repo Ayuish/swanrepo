@@ -225,7 +225,7 @@ char * extract_payload(char * filepath)
     return NULL;
     }
 
-
+/*
     int main()
     {
         char filepath[100]="try.xml";
@@ -234,3 +234,5 @@ char * extract_payload(char * filepath)
         printf("\n");
         return 0;
     }
+
+ */

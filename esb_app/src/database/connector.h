@@ -18,9 +18,9 @@
 #define FLAG 0            /*last parameter to mysql_real_connect */
 
 
-int connect_to_db(void);
+int connect_to_db(void);;
 int finish_with_error(MYSQL *con);
-int insert_to_esb_request(char *sender_id, char *dest_id,
+int insert_into_esb_request(char *sender_id, char *dest_id,
                           char *message_type, char *reference_id, char *message_id,
                           char *data_location, char *status, char *status_details, char *received_on);
 
