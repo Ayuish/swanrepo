@@ -176,7 +176,7 @@ bmd * parse_bmd_xml(char * filepath)
    sleep(2);
    bmd  * bd = (bmd*) malloc (sizeof(bmd));
    bd->envelope=  extract_envelope(filepath);
-   printf("MessageID is %s\n",bd->envelope->MessageID);
+   printf("\nMessageID is %s\n",bd->envelope->MessageID);
    printf("MessageType is %s\n",bd->envelope->MessageType);
    printf("Sender is %s\n",bd->envelope->Sender);
    printf("Destination is %s\n",bd->envelope->Destination);
@@ -202,7 +202,7 @@ char * extract_payload(char * filepath)
   doc = xmlReadFile(filepath, NULL, 0);
 
   if (doc == NULL) {
-    printf("Could not parse the XML file");
+    printf("Could not parse the XML file\n");
   }
   /*Get the root element node */
   root_element = xmlDocGetRootElement(doc);
@@ -248,78 +248,14 @@ char * extract_payload(char * filepath)
 }
 
 
-/* @ brief creating JSON file 
- * @ param  file path
- * @ return json file name
- */
-
-
-
-
-// char* xml_to_json ( bmd* bd){
-
-/* excluding the path of the directory and assigning filepath as name of the xml file*/
- 
-
-  /* extracting payload information*/
- // char * payload = bd->payload;
-
-  /* assigning memoryfor JSON file*/
-  /*
-  char * file_name = malloc((strlen("payload_") + strlen(bd->envelope->MessageID)+ strlen(".json")+1)* sizeof(char));
-  char * file_index = malloc((strlen(bd->envelope->MessageID)) * sizeof(char));
-  file_index = bd->envelope->MessageID;
-*/
-  /* creating .json file
-  
-  sprintf(file_name,"payload_%s.json",file_index);
-
-  FILE *fp = fopen(file_name,"w");
-    if(fp == NULL) {
-        printf("fopen failed, errno = %d\n", errno);
-    }
-    fprintf(fp,"{\n \"Payload\":\"%s\"\n}",payload);
-        fclose(fp);
-    return strdup(file_name);
- 
- }   
- */
-
-
-
-  /*
-long int find_size(char  * file_name) 
-{ 
-    // opening the file in read mode 
-    FILE* fp = fopen(file_name, "r"); 
-  
-    // checking if the file exist or not 
-    if (fp == NULL) { 
-    
-        printf("File Not Found!\n"); 
-        return -1; 
-    } 
-  
-    fseek(fp, 0L, SEEK_END); 
-  
-    // calculating the size of the file 
-    long int res = ftell(fp); 
-  
-    // closing the file 
-    fclose(fp); 
-  
-    return res; 
-} 
-
-
-*/
-
-
 
 int main()
 {
 
-    char  filepath[100] = "recieved_bmd.xml";
+    char  filepath[100] ;
+    //= "recieved_bmd.xml";
+    printf("Enter absolute path\n");
+    scanf("%c\n",filepath);
     bmd  * bd = (bmd*) malloc (sizeof(bmd));
     bd= parse_bmd_xml(filepath);
   //  validate_xml_file(bd)? printf("1"): printf("2");
