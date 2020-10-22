@@ -12,12 +12,12 @@ certain senders and message types etc.
 
 */
 
-##include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
 #include "xml.h"
 #include<string.h>
-#include "../db_access/connection,h"
+#include "../db_access/connector.h"
 
 int is_bmd_valid(bmd * bd)
 {
@@ -83,17 +83,17 @@ int is_bmd_valid(bmd * bd)
             return 0;
         }
 
-        //ReferenceId
-        if(bmd_file->envelope->ReferenceId == NULL)
+        //ReferenceID
+        if(bmd_file->envelope->ReferenceID == NULL)
         {
-            fprintf(stderr,"ReferenceId does not exist\n");
+            fprintf(stderr,"ReferenceID does not exist\n");
             return 0;
         }
 
         //payload
-        if(bmd_file->envelope->Payload == NULL)
+        if(bmd_file->payload == NULL)
         {
-            fprintf(stderr,"Payloda does not exist\n");
+            fprintf(stderr,"Payload does not exist\n");
             return 0;
         }
         return 1;
