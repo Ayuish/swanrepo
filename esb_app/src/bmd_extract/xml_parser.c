@@ -27,7 +27,7 @@ char * attributes[7] =  {
 };
  
 /*
-* @ breif : checking whether is a leaf node generated in DOM  
+* @ brief : checking whether is a leaf node generated in DOM
     if yes return 1 else 0    
 */
 int is_leaf(xmlNode * node)
@@ -67,7 +67,7 @@ void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
                        bm->MessageID=NULL;  
                     } 
                 }
-                /* MesageType*/
+                /* MessageType*/
                 else if((strcmp(((char *) node->name),attributes[1]))==0)
 	              {
 	                  bm->MessageType =  (char *)malloc((n+1)* sizeof(char));
@@ -248,7 +248,7 @@ char * extract_payload(char * filepath)
 }
 
 
-
+/*
 int main()
 {
 
@@ -263,8 +263,8 @@ int main()
   //  printf("%s",xml_to_json(bd));
     return 0;
 }
+*/
 
-/*
     int main()
     {
         char filepath[100]="try.xml";
@@ -274,4 +274,4 @@ int main()
         return 0;
     }
 
- */
+
