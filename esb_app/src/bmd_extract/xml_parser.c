@@ -1,6 +1,6 @@
 
 /**
- * section: BMD XML document parsing 
+ * section: BMD XML document parsing
  * synopsis: Navigates through XML document and store the content in a struct present in xml.h
  * purpose: Parse a XML to a tree, use xmlDocGetRootElement() to
  *          get the root element, then walk the document and store
@@ -16,7 +16,7 @@
 
 
 
-char * attributes[7] =  {
+char* attributes[7] =  {
     "MessageID",
     "MessageType",
     "Sender",
@@ -25,14 +25,14 @@ char * attributes[7] =  {
     "Signature",
     "ReferenceID"
 };
- 
+
 /*
 * @ brief : checking whether is a leaf node generated in DOM
-    if yes return 1 else 0    
+    if yes return 1 else 0
 */
-int is_leaf(xmlNode * node)
+int is_leaf(xmlNode* node)
 {
-  xmlNode * child = node->children;
+  xmlNode* child = node->children;
   while(child)
   {
     if(child->type == XML_ELEMENT_NODE) return 0;
@@ -48,7 +48,7 @@ int is_leaf(xmlNode * node)
 */
 
 
-void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
+void extract_envelope_utils(xmlNode* node, bmd_envelope* bm)
 {
     int n;
     while(node)
@@ -59,68 +59,68 @@ void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
             {
                  n= strlen((char*) xmlNodeGetContent(node));
                  /* MessageID*/
-                if((strcmp(((char *) node->name),attributes[0]))==0)
+                if((strcmp(((char*) node->name),attributes[0]))==0)
                 {
                     bm->MessageID = malloc((n+1)* sizeof(char));
-                    strcpy(bm->MessageID,(char *) xmlNodeGetContent(node));
+                    strcpy(bm->MessageID,(char*) xmlNodeGetContent(node));
                     if(strcmp(bm->MessageID, "") ==0){
-                       bm->MessageID=NULL;  
-                    } 
+                       bm->MessageID=NULL;
+                    }
                 }
                 /* MessageType*/
-                else if((strcmp(((char *) node->name),attributes[1]))==0)
+                else if((strcmp(((char*) node->name),attributes[1]))==0)
 	              {
-	                  bm->MessageType =  (char *)malloc((n+1)* sizeof(char));
-                    strcpy(bm->MessageType ,(char *)xmlNodeGetContent(node));
+	                  bm->MessageType =  (char*)malloc((n+1)* sizeof(char));
+                    strcpy(bm->MessageType ,(char*)xmlNodeGetContent(node));
                     if(strcmp(bm->MessageType, "") ==0){
-                       bm->MessageType=NULL;  
-                    }    
+                       bm->MessageType=NULL;
+                    }
 	              }
                 /* Sender*/
-                else if(strcmp(((char *) node->name), "Sender")==0)
+                else if(strcmp(((char*) node->name), "Sender")==0)
 	              {
-		              bm->Sender =  (char *)malloc((n+1)* sizeof(char));
-                   strcpy(bm->Sender ,(char *)xmlNodeGetContent(node));
+		              bm->Sender =  (char*)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Sender ,(char*)xmlNodeGetContent(node));
                    if(strcmp(bm->Sender, "") ==0){
-                       bm->Sender=NULL;  
-                    } 
+                       bm->Sender=NULL;
+                    }
 	            	}
                  /* Destination*/
-                else if((strcmp(((char *) node->name),attributes[3]))==0)
+                else if((strcmp(((char*) node->name),attributes[3]))==0)
                 {
-		               bm->Destination =  (char *)malloc((n+1)* sizeof(char));
-                   strcpy(bm->Destination ,(char *)xmlNodeGetContent(node));
+		               bm->Destination =  (char*)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Destination ,(char*)xmlNodeGetContent(node));
                    if(strcmp(bm->Destination, "") ==0){
-                       bm->Destination=NULL;  
-                    } 
+                       bm->Destination=NULL;
+                    }
 	              }
                 /* CreationDateTime*/
-                else if((strcmp(((char *) node->name),attributes[4]))==0)
+                else if((strcmp(((char*) node->name),attributes[4]))==0)
 	              {
                    printf("yes\n");
-		               bm->CreationDateTime =  (char *)malloc((n+1)* sizeof(char));
-                   strcpy(bm->CreationDateTime ,(char *)xmlNodeGetContent(node));
+		               bm->CreationDateTime =  (char*)malloc((n+1)* sizeof(char));
+                   strcpy(bm->CreationDateTime ,(char*)xmlNodeGetContent(node));
                    if(strcmp(bm->CreationDateTime, "") ==0){
-                       bm->CreationDateTime=NULL;  
-                    } 
+                       bm->CreationDateTime=NULL;
+                    }
 	              }
                  /* Signature*/
-	              else  if((strcmp(((char *) node->name),attributes[5]))==0)
+	              else  if((strcmp(((char*) node->name),attributes[5]))==0)
             	  {
-         	         bm->Signature =  (char *)malloc((n+1)* sizeof(char));
-                   strcpy(bm->Signature ,(char *)xmlNodeGetContent(node));
+         	         bm->Signature =  (char*)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Signature ,(char*)xmlNodeGetContent(node));
                    if(strcmp(bm->Signature, "") ==0){
-                       bm->Signature=NULL;  
-                    } 
+                       bm->Signature=NULL;
+                    }
                 }
                 /* ReferenceID*/
-                else if((strcmp(((char *) node->name),attributes[6]))==0)
+                else if((strcmp(((char*) node->name),attributes[6]))==0)
 	              {
-		                bm->ReferenceID =  (char *)malloc((n+1)* sizeof(char));
-                    strcpy(bm->ReferenceID ,(char *)xmlNodeGetContent(node));\
+		                bm->ReferenceID =  (char*)malloc((n+1)* sizeof(char));
+                    strcpy(bm->ReferenceID ,(char*)xmlNodeGetContent(node));\
                     if(strcmp(bm->ReferenceID, "") ==0){
-                       bm->ReferenceID=NULL;  
-                    } 
+                       bm->ReferenceID=NULL;
+                    }
                 }
             }
         }
@@ -132,10 +132,10 @@ void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
 /* @ brief : extracting bmd_envelope
 */
 
-bmd_envelope * extract_envelope(char * filepath)
+bmd_envelope* extract_envelope(char* filepath)
 {
-  xmlDoc *doc = NULL;
-  xmlNode *root_element = NULL;
+  xmlDoc* doc = NULL;
+  xmlNode* root_element = NULL;
 
   /*parse the file and get the DOM */
   doc = xmlReadFile(filepath, NULL, 0);
@@ -144,7 +144,7 @@ bmd_envelope * extract_envelope(char * filepath)
     printf("Could not parse the XML file");
   }
   /*Get the root element node */
-  bmd_envelope * bm =(bmd_envelope *) malloc(sizeof(bmd_envelope));
+  bmd_envelope* bm =(bmd_envelope*) malloc(sizeof(bmd_envelope));
   root_element = xmlDocGetRootElement(doc);
 
   extract_envelope_utils(root_element,bm);
@@ -165,11 +165,11 @@ bmd_envelope * extract_envelope(char * filepath)
 /* @ breif : extracting payload from xml file
 * input aruguments : filepath ( ehere xml file is stored)
 * returns payload as char *
-* returning the payload 
+* returning the payload
 */
 
 
-bmd * parse_bmd_xml(char * filepath)
+bmd* parse_bmd_xml(char* filepath)
 {
    printf("XML PARSING\n");
    printf("Parsing the XML ...\n");
@@ -184,20 +184,20 @@ bmd * parse_bmd_xml(char * filepath)
    printf("Creation Date and Time  is %s\n",bd->envelope->CreationDateTime);
    printf("Signature is %s\n",bd->envelope->Signature);
    bd->payload= extract_payload(filepath);
-   
+
    return bd;
 }
 
 
 
 
-char * extract_payload(char * filepath)
+char* extract_payload(char* filepath)
 {
 
 
-  xmlDoc *doc = NULL;
-  xmlNode *root_element = NULL;
-  char * Payload;
+  xmlDoc* doc = NULL;
+  xmlNode* root_element = NULL;
+  char* Payload;
   /*parse the file and get the DOM */
   doc = xmlReadFile(filepath, NULL, 0);
 
@@ -207,7 +207,7 @@ char * extract_payload(char * filepath)
   /*Get the root element node */
   root_element = xmlDocGetRootElement(doc);
   int n;
-  xmlNode * node = root_element -> children;
+  xmlNode* node = root_element -> children;
   while(node)
   {
 
@@ -216,24 +216,24 @@ char * extract_payload(char * filepath)
       if(is_leaf(node))
       {
 
-        if ((strcmp(((char *) node->name),"Payload"))==0)
+        if ((strcmp(((char*) node->name),"Payload"))==0)
 	      {
 	              n= strlen((char*) xmlNodeGetContent(node));
 	          printf("payload length is  %d\n",n);
-            Payload = (char *)malloc((n+2)* sizeof(char));
-            printf("%s\n", (char *) xmlNodeGetContent(node));
+            Payload = (char*)malloc((n+2)* sizeof(char));
+            printf("%s\n", (char*) xmlNodeGetContent(node));
            // Payload =  (char *) xmlNodeGetContent(node);
-            strcpy(Payload , (char *) xmlNodeGetContent(node));
+            strcpy(Payload , (char*) xmlNodeGetContent(node));
             	          printf("payload %s\n",Payload);
             if(n==0){
-                Payload=NULL;  
-            } 
+                Payload=NULL;
+            }
             return Payload;
         }
-      } 
+      }
     }
     node= node->next;
-  } 
+  }
 
   /*free the document */
   xmlFreeDoc(doc);
@@ -244,11 +244,11 @@ char * extract_payload(char * filepath)
   */
   xmlCleanupParser();
   printf("yesssss\n");
-  return NULL;     
+  return NULL;
 }
 
 
-/*
+
 int main()
 {
 
@@ -263,7 +263,7 @@ int main()
   //  printf("%s",xml_to_json(bd));
     return 0;
 }
-*/
+
 /*
     int main()
     {
@@ -273,5 +273,5 @@ int main()
         printf("\n");
         return 0;
     }
-
 */
+
