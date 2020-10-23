@@ -161,11 +161,11 @@ int check_id_in_transform_config(int route_id)
     {
         row_count++;
 
-       /* printf("%d\n",small_data[0]);
+        printf("%d\n",small_data[0]);
         printf("%d\n",small_data[1]);
         fprintf(stdout,"%s\t",str_data[0]);
         fprintf(stdout,"%s\t",str_data[1]);
-        */
+
         mysql_free_result(prepare_meta_result);
 
         //close
@@ -199,7 +199,7 @@ int check_id_in_transform_config(int route_id)
         int valid_id= check_id_in_transform_config(route_id);
         if(valid_id==1)
         {
-            printf("Yes there is a record present in the transform_config table\n");
+            printf("\nYes there is a record present in the transform_config table\n");
         }
         else{
             printf("No record present in transform_config table\n");
