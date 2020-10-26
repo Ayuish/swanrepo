@@ -1,84 +1,322 @@
-/**
- * This code is adapted from the sample available at:
- * http://xmlsoft.org/tutorial/apd.html.
- * 
- * Compile using the following command on linux/Mac:
- * gcc xml_parser.c -lxml2 -o out
 
- */
+/* 
+Created By Vinay Prabhakar on 20/10/20
+@Brief : Under this module we will be making a parser to extract the data in form of envelope from
+the XML file received and will store it in the database
+and will be formatting into json format and checking its size for verification purposes
 
+*/
+
+#include <stdio.h>
 #include <libxml/parser.h>
-#include <libxml/xpath.h>
+#include <stdlib.h>
+#include<string.h>
+#include "xml.h"
+#include<errno.h>
 
-xmlDocPtr load_xml_doc(char *xml_file_path) {
-    xmlDocPtr doc = xmlParseFile(xml_file_path);
-    if (doc == NULL) {
-        fprintf(stderr, "ERROR: Document not parsed successfully. \n");
-        return NULL;
-    }
-    return doc;
+
+
+char * attributes[7] =  {
+    "MessageID",
+    "MessageType",
+    "Sender",
+    "Destination",
+    "CreationDateTime",
+    "Signature",
+    "ReferenceID"
+};
+ 
+/*
+* @ breif : checking whether is a leaf node generated in DOM  
+    if yes return 1 else 0    
+*/
+int is_leaf(xmlNode * node)
+{
+  xmlNode * child = node->children;
+  while(child)
+  {
+    if(child->type == XML_ELEMENT_NODE) return 0;
+    child = child->next;
+  }
+  return 1;
 }
 
-/**
- * Extract the nodes matching the given xpath from the supplied
- * XML document object.
- */
-xmlXPathObjectPtr get_nodes_at_xpath(xmlDocPtr doc, xmlChar *xpath) {
-
-    xmlXPathContextPtr context = xmlXPathNewContext(doc);
-    if (context == NULL) {
-        printf("ERROR: Failed to create xpath context from the XML document.\n");
-        return NULL;
-    }
-    xmlXPathObjectPtr result = xmlXPathEvalExpression(xpath, context);
-    xmlXPathFreeContext(context);
-    if (result == NULL) {
-        printf("ERROR: Failed to evaluate xpath expression.\n");
-        return NULL;
-    }
-    if (xmlXPathNodeSetIsEmpty(result->nodesetval)) {
-        xmlXPathFreeObject(result);
-        printf("No matching nodes found at the xpath.\n");
-        return NULL;
-    }
-    return result;
-}
-
-/**
- * Returns the text value of an XML element. It is expected that
- * there is only one XML element at the given xpath in the XML.
- */
-xmlChar* get_element_text(char *node_xpath, xmlDocPtr doc) {
-    xmlChar *node_text;
-    xmlXPathObjectPtr result = get_nodes_at_xpath(doc, 
-        (xmlChar*)node_xpath);
-    if (result) {
-        xmlNodeSetPtr nodeset = result->nodesetval;
-        if (nodeset->nodeNr == 1) {
-            node_text = xmlNodeListGetString(doc,
-                nodeset->nodeTab[0]->xmlChildrenNode, 1);
-        } else {
-            printf("ERROR: Expected one %s node, found %d\n", node_xpath, nodeset->nodeNr);
-        }
-        xmlXPathFreeObject(result);
-    } else {
-        printf("ERROR: Node not found at xpath %s\n", node_xpath);
-    }
-    return node_text;
-}
 
 /*
-int main(int argc, char **argv) {
-    char *docname = "/home/vinay/Desktop/swan/esb_app/src/bmd_extract/recieved_bmd.xml";
-    xmlDocPtr doc = load_xml_doc(docname);
-    printf("MessageID=%s\n", get_element_text("//MessageID", doc));
-    printf("Sender=%s\n", get_element_text("//Sender", doc));
-    printf("Destination=%s\n", get_element_text("//Destination", doc));
-    printf("MessageType=%s\n", get_element_text("//MessageType", doc));
-    printf("Signature =%s\n",get_element_text("//Signature",doc));
-    printf("Payload=%s\n", get_element_text("//Payload", doc));
+* breif @ extracting contents from a XML document and store it in bm
+* we store if node type is element and it is a leaf
+*/
+
+
+void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
+{
+    int n;
+    while(node)
+    {
+        if(node->type == XML_ELEMENT_NODE)
+        {
+            if(is_leaf(node))
+            {
+                 n= strlen((char*) xmlNodeGetContent(node));
+                 /* MessageID*/
+                if((strcmp(((char *) node->name),attributes[0]))==0)
+                {
+                    bm->MessageID = malloc((n+1)* sizeof(char));
+                    strcpy(bm->MessageID,(char *) xmlNodeGetContent(node));
+                    if(strcmp(bm->MessageID, "") ==0){
+                       bm->MessageID=NULL;  
+                    } 
+                }
+                /* MesageType*/
+                else if((strcmp(((char *) node->name),attributes[1]))==0)
+	              {
+	                  bm->MessageType =  (char *)malloc((n+1)* sizeof(char));
+                    strcpy(bm->MessageType ,(char *)xmlNodeGetContent(node));
+                    if(strcmp(bm->MessageType, "") ==0){
+                       bm->MessageType=NULL;  
+                    }    
+	              }
+                /* Sender*/
+                else if(strcmp(((char *) node->name), "Sender")==0)
+	              {
+		              bm->Sender =  (char *)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Sender ,(char *)xmlNodeGetContent(node));
+                   if(strcmp(bm->Sender, "") ==0){
+                       bm->Sender=NULL;  
+                    } 
+	            	}
+                 /* Destination*/
+                else if((strcmp(((char *) node->name),attributes[3]))==0)
+                {
+		               bm->Destination =  (char *)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Destination ,(char *)xmlNodeGetContent(node));
+                   if(strcmp(bm->Destination, "") ==0){
+                       bm->Destination=NULL;  
+                    } 
+	              }
+                /* CreationDateTime*/
+                else if((strcmp(((char *) node->name),attributes[4]))==0)
+	              {
+                   printf("yes\n");
+		               bm->CreationDateTime =  (char *)malloc((n+1)* sizeof(char));
+                   strcpy(bm->CreationDateTime ,(char *)xmlNodeGetContent(node));
+                   if(strcmp(bm->CreationDateTime, "") ==0){
+                       bm->CreationDateTime=NULL;  
+                    } 
+	              }
+                 /* Signature*/
+	              else  if((strcmp(((char *) node->name),attributes[5]))==0)
+            	  {
+         	         bm->Signature =  (char *)malloc((n+1)* sizeof(char));
+                   strcpy(bm->Signature ,(char *)xmlNodeGetContent(node));
+                   if(strcmp(bm->Signature, "") ==0){
+                       bm->Signature=NULL;  
+                    } 
+                }
+                /* ReferenceID*/
+                else if((strcmp(((char *) node->name),attributes[6]))==0)
+	              {
+		                bm->ReferenceID =  (char *)malloc((n+1)* sizeof(char));
+                    strcpy(bm->ReferenceID ,(char *)xmlNodeGetContent(node));\
+                    if(strcmp(bm->ReferenceID, "") ==0){
+                       bm->ReferenceID=NULL;  
+                    } 
+                }
+            }
+        }
+       extract_envelope_utils(node->children,bm);
+        node = node->next;
+    }
+}
+
+/* @ brief : extracting bmd_envelope
+*/
+
+bmd_envelope * extract_envelope(char * filepath)
+{
+  xmlDoc *doc = NULL;
+  xmlNode *root_element = NULL;
+
+  /*parse the file and get the DOM */
+  doc = xmlReadFile(filepath, NULL, 0);
+
+  if (doc == NULL) {
+    printf("Could not parse the XML file");
+  }
+  /*Get the root element node */
+  bmd_envelope * bm =(bmd_envelope *) malloc(sizeof(bmd_envelope));
+  root_element = xmlDocGetRootElement(doc);
+
+  extract_envelope_utils(root_element,bm);
+
+
+   /*free the document */
     xmlFreeDoc(doc);
+
+  /*
+  *Free the global variables that may
+  *have been allocated by the parser.
+  */
     xmlCleanupParser();
-    return 1;
+    return bm;
+}
+
+
+/* @ breif : extracting payload from xml file
+* input aruguments : filepath ( ehere xml file is stored)
+* returns payload as char *
+* returning the payload 
+*/
+
+
+bmd * parse_bmd_xml(char * filepath)
+{
+   printf("XML PARSING\n");
+   bmd  * bd = (bmd*) malloc (sizeof(bmd));
+   bd->envelope=  extract_envelope(filepath);
+   bd->payload= extract_payload(filepath);
+   printf("Hello There\n");
+   return bd;
+}
+
+
+
+
+char * extract_payload(char * filepath)
+{
+
+
+  xmlDoc *doc = NULL;
+  xmlNode *root_element = NULL;
+  char * Payload;
+  /*parse the file and get the DOM */
+  doc = xmlReadFile(filepath, NULL, 0);
+
+  if (doc == NULL) {
+    printf("Could not parse the XML file");
+  }
+  /*Get the root element node */
+  root_element = xmlDocGetRootElement(doc);
+  int n;
+  xmlNode * node = root_element -> children;
+  while(node)
+  {
+
+    if(node->type == XML_ELEMENT_NODE)
+    {
+      if(is_leaf(node))
+      {
+
+        if ((strcmp(((char *) node->name),"Payload"))==0)
+	      {
+	              n= strlen((char*) xmlNodeGetContent(node));
+	          printf("payload length is  %d\n",n);
+            Payload = (char *)malloc((n+2)* sizeof(char));
+            printf("%s\n", (char *) xmlNodeGetContent(node));
+           // Payload =  (char *) xmlNodeGetContent(node);
+            strcpy(Payload , (char *) xmlNodeGetContent(node));
+            	          printf("payload %s\n",Payload);
+            if(n==0){
+                Payload=NULL;  
+            } 
+            return Payload;
+        }
+      } 
+    }
+    node= node->next;
+  } 
+
+  /*free the document */
+  xmlFreeDoc(doc);
+
+  /*
+  *Free the global variables that may
+  *have been allocated by the parser.
+  */
+  xmlCleanupParser();
+  printf("yesssss\n");
+  return NULL;     
+}
+
+
+/* @ brief creating JSON file 
+ * @ param  file path
+ * @ return json file name
+ */
+
+
+
+
+ char* xml_to_json ( bmd* bd){
+
+/* excluding the path of the directory and assigning filepath as name of the xml file*/
+ 
+
+  /* extracting payload information*/
+  char * payload = bd->payload;
+
+  /* assigning memoryfor JSON file*/
+  
+  char * file_name = malloc((strlen("payload_") + strlen(bd->envelope->MessageID)+ strlen(".json")+1)* sizeof(char));
+  char * file_index = malloc((strlen(bd->envelope->MessageID)) * sizeof(char));
+  file_index = bd->envelope->MessageID;
+
+// creating .json file
+  
+  sprintf(file_name,"payload_%s.json",file_index);
+
+  FILE *fp = fopen(file_name,"w");
+    if(fp == NULL) {
+        printf("fopen failed, errno = %d\n", errno);
+    }
+    fprintf(fp,"{\n \"Payload\":\"%s\"\n}",payload);
+        fclose(fp);
+    return strdup(file_name);
+ 
+ }   
+ 
+
+
+
+  
+long int find_size(char  * file_name) 
+{ 
+    // opening the file in read mode 
+    FILE* fp = fopen(file_name, "r"); 
+  
+    // checking if the file exist or not 
+    if (fp == NULL) { 
+    
+        printf("File Not Found!\n"); 
+        return -1; 
+    } 
+  
+    fseek(fp, 0L, SEEK_END); 
+  
+    // calculating the size of the file 
+    long int res = ftell(fp); 
+  
+    // closing the file 
+    fclose(fp); 
+  
+    return res; 
+} 
+
+
+
+
+
+/*
+int main()
+{
+
+    char  filepath[100] = "try.xml";
+    bmd  * bd = (bmd*) malloc (sizeof(bmd));
+    bd= parse_bmd_xml(filepath);
+  //  validate_xml_file(bd)? printf("1"): printf("2");
+    printf("\n");
+  //  printf("%s",xml_to_json(bd));
+    return 0;
 }
 */
+

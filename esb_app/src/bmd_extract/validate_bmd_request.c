@@ -18,13 +18,13 @@ certain senders and message types etc.
 #include "xml.h"
 #include<string.h>
 #include "../db_access/connector.h"
-/*
+
 int is_bmd_valid(bmd * bd)
 {
     printf("%s\n%s\n%s\n",bd->envelope->Sender,bd->envelope->Destination,bd->envelope->MessageType);
     if(validate_xml_file(bd))
     {
-        int id=active_routes_from_source(bd->envelope->Sender,bd->envelope->Destination,bd->envelope->MessageType);
+        int id=get_active_route_id(bd->envelope->Sender,bd->envelope->Destination,bd->envelope->MessageType);
         printf("id is %d\n",id);
         if(id>0)
         {
@@ -98,4 +98,4 @@ int is_bmd_valid(bmd * bd)
         }
         return 1;
     }
-    */
+    
