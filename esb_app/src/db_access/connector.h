@@ -18,6 +18,19 @@
 #define FLAG 0            /*last parameter to mysql_real_connect */
 
 
+typedef struct transport_config_data
+{
+    char * config_key;
+    char * config_value;
+}transport_config;
+
+typedef struct transform_config_data
+{
+    char * config_key;
+    char * config_value;
+}transform_config;
+
+
 int connect_to_db(void);;
 int finish_with_error(MYSQL *con);
 int insert_into_esb_request(char *sender_id, char *dest_id,
@@ -25,5 +38,20 @@ int insert_into_esb_request(char *sender_id, char *dest_id,
                           char *data_location, char *status, char *status_details, char *received_on);
 int get_active_route_id(char *sender_id,char *destination_id, char *message_type);
 int update_esb_request(char * status,int id);
+
+int insert_to_esb_request(char *sender_id,char *dest_id,
+char *message_type,char *reference_id,char *message_id, 
+char *data_location, char *status,char *status_details,char *received_on);
+
+int check_id_in_transform_config(int route_id);
+
+int check_id_in_transport_config(int route_id);
+ 
+int select_status(char * status);
+
+transform_config *  fetch_transform_config_key_and_value(int route_id);
+
+transport_config *  fetch_transport_config_key_and_value(int route_id);
+
 
 #endif //DATABASE_CONNECTOR_H

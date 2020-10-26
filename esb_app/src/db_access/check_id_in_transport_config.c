@@ -6,7 +6,7 @@ transportation steps as per the destination service
 */
 
 /* compilation command
-gcc -Wall -I/usr/include/libxml2 -o m check_id_in_transport_config.c -lxml2 `mysql_config --cflags --libs`
+Command to run is gcc check_id_in_transform_config.c -L/usr/local/mysql/lib -lmysqlclient -o out
 
 */
 

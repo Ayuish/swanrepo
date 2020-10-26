@@ -3,6 +3,9 @@ Created BY Vinay Prabhakar on 23/10/20
 Under this : We will be checking whether for a particular route_id
 is there a record present in the transformation_config table
 so as to apply transformation steps as required by destination service
+
+
+Command to run is gcc check_id_in_transform_config.c -L/usr/local/mysql/lib -lmysqlclient -o out
 */
 
 #include<stdlib.h>

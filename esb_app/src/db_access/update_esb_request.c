@@ -2,6 +2,8 @@
 @Brief :- Under this we will be updating the esb_request table after that request
 has been completed and we need to update the status in that table to "Error
 or "Done" as per our requirement
+
+compilation command is update esb_request.c -I/usr/include/libxml -lxml2 -L/usr/local/mysql/lib -lmysqlclient -o out
 */
 
 #include<stdio.h>
