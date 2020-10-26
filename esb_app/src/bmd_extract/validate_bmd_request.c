@@ -18,7 +18,7 @@ certain senders and message types etc.
 #include "xml.h"
 #include<string.h>
 #include "../db_access/connector.h"
-
+/*
 int is_bmd_valid(bmd * bd)
 {
     printf("%s\n%s\n%s\n",bd->envelope->Sender,bd->envelope->Destination,bd->envelope->MessageType);
@@ -98,3 +98,4 @@ int is_bmd_valid(bmd * bd)
         }
         return 1;
     }
+    */

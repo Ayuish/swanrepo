@@ -14,14 +14,16 @@
 #define PORT 20000
 #define LENGTH 512 
 
-
+/*
 void error(const char *msg)
 {
 	perror(msg);
 	exit(1);
 }
 
-int main(int argc, char *argv[])
+*/
+
+int main()
 {
 	/* Variable Definition */
 	int sockfd; 

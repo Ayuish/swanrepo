@@ -17,7 +17,7 @@
 #define LENGTH 512 
 
 
-//how to pass path of a file to this thread ?
+
  
 void* thread_function(char* args)
 {
@@ -101,7 +101,7 @@ int main ()
 		}
 		else
 		{
-			printf("Thread not created successfully\n");
+			printf("Thread creation failed\n");
 		}
 		
 		FILE *fr = fopen(fr_name, "a");

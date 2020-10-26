@@ -1,6 +1,6 @@
 
 #include "connector.h"
-
+/*
 int main() {
     char *s,*d,*mt,*rid,*mid,*dl,*st,*std;
     s="sender42"; d = "dest3"; mt = "CreditReports"; mid = "2";
@@ -23,4 +23,4 @@ int main() {
     return 0;
 
 }
-
+*/
