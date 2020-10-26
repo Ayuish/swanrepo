@@ -7,7 +7,7 @@
 #include <string.h>
 
 /* Contains necessary C functions of mysql */
-#include <mysql.h>
+#include <mysql/mysql.h>
 /**
  * Holds the info to connect to DB and
  * error specifying function for
@@ -67,7 +67,7 @@ int get_active_route_id(char *sender_id,char *destination_id, char *message_type
    */
     if (mysql_real_connect(con, HOST, USER, PASS,DB_NAME,
                            PORT, UNIX_SOCKET, FLAG) == NULL) {
-        finish_with_error(con);
+        printf("Failed to connect to database");
     }
 
     stmt = mysql_stmt_init(con);

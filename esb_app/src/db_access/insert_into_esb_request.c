@@ -83,7 +83,7 @@ int insert_into_esb_request(char *sender_id, char *dest_id,
     if (mysql_real_connect(con, HOST, USER, PASS,
                            DB_NAME, PORT, UNIX_SOCKET, FLAG) == NULL)
     {
-        finish_with_error(con);
+        printf("Failed to connect to database ");
     }
     /* Prepare an INSERT query with 9 parameters */
     stmt = mysql_stmt_init(con);

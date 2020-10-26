@@ -18,6 +18,9 @@
 #define FLAG 0            /*last parameter to mysql_real_connect */
 
 
+
+
+
 typedef struct transport_config_data
 {
     char * config_key;
