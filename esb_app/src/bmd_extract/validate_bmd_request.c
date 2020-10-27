@@ -17,6 +17,7 @@ certain senders and message types etc.
 #include<stdbool.h>
 #include "xml.h"
 #include<string.h>
+#include "../esb/esb.h"
 #include "../db_access/connector.h"
 
 int is_bmd_valid(bmd * bd)
