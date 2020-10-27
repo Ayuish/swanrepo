@@ -7,12 +7,12 @@
  */
 bmd parse_bmd_xml(char* bmd_file_path) {
     bmd b;
-    bmd_envelope envl;
-    envl.Sender = "TEST-GUID-1";
-    envl.Destination = "TEST-GUID-2";
-    envl.MessageType = "TEST-GUID-3";
+    bmd_envelop envl;
+    envl.sender_id = "TEST-GUID-1";
+    envl.destination_id = "TEST-GUID-2";
+    envl.message_type = "TEST-GUID-3";
 
-    b.envelope = envl;
+    b.envelop = envl;
     b.payload = "Some data here";
     return b;
 }
