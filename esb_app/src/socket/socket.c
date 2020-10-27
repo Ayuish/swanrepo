@@ -181,6 +181,7 @@ void send_message_to_socket(char *msg, char *socket_file) {
  * @param argv
  * @return
  */
+ /*
 int main(int argc, char *argv[]) {
     if (argc < 3) {
         printf("Usage: %s [server|client] [Local socket file path] [Message to send (needed only in case of client)]\n",
@@ -193,3 +194,4 @@ int main(int argc, char *argv[]) {
         send_message_to_socket(argv[3], argv[2]);
     }
 }
+*/
