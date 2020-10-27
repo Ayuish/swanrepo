@@ -235,6 +235,21 @@ fetch_transport_config_key_and_value_tear_down(void *fixture)
 }
 
 
+/*
+ * @brief unit testing of
+ * int update_esb_request(char * status,int id);
+ */
+
+static MunitResult
+test_update_esb_request(const MunitParameter params[], void *fixture)
+{
+    int random_int = munit_rand_int_range(1,5000);
+    /* Check the return value */
+    int r_value = update_esb_request("available",random_int);
+    munit_assert_int(r_value, ==, 1);
+    return MUNIT_OK;
+}
+
 
 static MunitTest database_tests[] = {
         {
@@ -322,7 +337,20 @@ static MunitTest database_tests[] = {
                 /* parameters */
                 NULL
         },
-
+        {
+                /* name */
+                (char *) "/test_db_access/update_esb_request",
+                /* test */
+                test_update_esb_request,
+                /* setup */
+                NULL,
+                /* tear_down */
+                NULL,
+                /* options */
+                MUNIT_TEST_OPTION_NONE,
+                /* parameters */
+                NULL
+        },
         /* Mark the end of the array with an entry where the test
          * function is NULL */
         {

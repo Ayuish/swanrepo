@@ -108,6 +108,8 @@ int update_esb_request(char * status,int id)
         return -1;
     }
 
+
+
     //clsoe the statement
     if(mysql_stmt_close(stmt))
     {
