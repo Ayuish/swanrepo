@@ -10,7 +10,6 @@ Command to run is gcc check_id_in_transform_config.c -L/usr/local/mysql/lib -lmy
 
 */
 
-#include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
 #include "connector.h"
