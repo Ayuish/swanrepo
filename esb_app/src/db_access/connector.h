@@ -10,8 +10,8 @@
 
 
 #define HOST "localhost"   /*hostname*/
-#define USER  "root"       /*username*/
-#define PASS    "prabhakars 589b"         /* Left blank for Code portability */
+#define USER  "raja"       /*username*/
+#define PASS    "Kucharla@1"         /* Left blank for Code portability */
 #define DB_NAME "esb_db"   /*name of the database*/
 #define PORT  3306         /*port number*/
 #define UNIX_SOCKET NULL   /*unix socket*/
@@ -41,11 +41,6 @@ int insert_into_esb_request(char *sender_id, char *dest_id,
                           char *data_location, char *status, char *status_details, char *received_on);
 int get_active_route_id(char *sender_id,char *destination_id, char *message_type);
 int update_esb_request(char * status,int id);
-
-int insert_to_esb_request(char *sender_id,char *dest_id,
-char *message_type,char *reference_id,char *message_id, 
-char *data_location, char *status,char *status_details,char *received_on);
-
 int check_id_in_transform_config(int route_id);
 
 int check_id_in_transport_config(int route_id);

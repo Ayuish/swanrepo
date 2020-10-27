@@ -150,7 +150,7 @@ int check_id_in_transform_config(int route_id)
         exit(0);
     }
 
-    //stor the results
+    //store the results
     if(mysql_stmt_store_result(stmt))
     {
         fprintf(stderr,"mysql_stmt_store_result(stmt) failed\n");
@@ -158,7 +158,7 @@ int check_id_in_transform_config(int route_id)
         exit(0);
     }
 
-    //getch rows
+    //get rows
     row_count=0;
     while(!mysql_stmt_fetch(stmt))
     {
@@ -181,7 +181,7 @@ int check_id_in_transform_config(int route_id)
         return 1;
     }
 
-    //free the rsult metadata
+    //free the result metadata
     mysql_free_result(prepare_meta_result);
 
     //close the statement

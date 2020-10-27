@@ -183,7 +183,7 @@ transport_config* fetch_transport_config_key_and_value(int route_id)
                 }
                 else{
                     fprintf(stdout,"%s\n",str_data[1]);
-                    tp->config_key=strdup(str_data[1]);
+                    tp->config_value=strdup(str_data[1]);
 
                 }
         ///free the prepared result

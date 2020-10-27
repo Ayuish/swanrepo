@@ -176,8 +176,9 @@ transform_config *  fetch_transform_config_key_and_value(int route_id){
 	  if (is_null[0])
 	    fprintf(stdout, " NULL\n");
 	  else
-	    fprintf(stdout, " %s\n", str_data[0]);
-	    tf->config_key=strdup(str_data[0]);
+          fprintf(stdout, " %s\n", str_data[0]);
+          tf->config_key = strdup(str_data[0]);
+
 
 	  /* column 2 */
 	  fprintf(stdout, "   column2 (config_value)   : ");
