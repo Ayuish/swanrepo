@@ -27,11 +27,12 @@ typedef struct
 
 
 
-bmd_envelope *  extract_envelope(char * filepath);
-char * extract_payload(char * filepath);
-int validate_xml_file (bmd * bmd_file);
-bmd * parse_bmd_xml(char * filepath);
+bmd_envelope*  extract_envelope(char* filepath);
+char* extract_payload(char* filepath);
+int validate_xml_file (bmd* bmd_file);
+bmd* parse_bmd_xml(char* filepath);
 int is_bmd_valid(bmd* bd); 
+void insert(bmd* bd);
 
 
 /*
