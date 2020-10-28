@@ -104,18 +104,11 @@ static const MunitSuite suite = {
   MUNIT_SUITE_OPTION_NONE /* options */
 };
 
-<<<<<<< HEAD
 
-// Run the the test suite
-=======
 /* Run the the test suite */
->>>>>>> 0f91d81b02f700f66223f0739d33b7bd4932831c
+
 /*
 int main (int argc, const char* argv[]) {
   return munit_suite_main(&suite, NULL, argc, argv);
 }
-<<<<<<< HEAD
 */
-=======
-*/
->>>>>>> 0f91d81b02f700f66223f0739d33b7bd4932831c

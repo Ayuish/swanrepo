@@ -8,11 +8,11 @@
  * TODO: This is to be implemented separately.
  */
  
-bmd parse_bmd_xml(char* bmd_file_path) {
+bmd* parse_bmd_xml(char* bmd_file_path) {
 
 
 //
-bmd b;
+bmd *b;
   
   xmlDocPtr load_xml_doc(char *xml_file_path) {
     xmlDocPtr doc = xmlParseFile(xml_file_path);
@@ -118,7 +118,7 @@ int process_esb_request(char* bmd_file_path) {
      * the modules, including this one.
      */
     // Step 1:
-    bmd b = parse_bmd_xml(bmd_file_path);
+    bmd *b = parse_bmd_xml(bmd_file_path);
 
     // Step 2:
     if (is_bmd_valid(b)!=1)
@@ -130,7 +130,7 @@ int process_esb_request(char* bmd_file_path) {
     else
     {
         // Step 3:
-        status = queue_the_request(b);
+        status = queue_the_request(*b);
     }
     
     return status;
