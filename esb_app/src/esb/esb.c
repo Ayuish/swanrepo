@@ -7,8 +7,8 @@
 /**
  * TODO: This is to be implemented separately.
  */
- 
-bmd* parse_bmd_xml(char* bmd_file_path) {
+
+bmd* parse_bmd_xml_1(char* bmd_file_path) {
 
 
 //

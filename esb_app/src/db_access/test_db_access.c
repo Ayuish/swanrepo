@@ -375,10 +375,10 @@ static const  MunitSuite suite = {
 };
 
 
-
+/*
 int main(int argc,const char* argv[]) {
     char *user_data = "/home/rajashekhar/nho2020b2/swan/esb_app/src/test_files/dum1.xml";
     return munit_suite_main(&suite, (void *)user_data, argc, (char *const *) argv);
 }
-
+*/
 
