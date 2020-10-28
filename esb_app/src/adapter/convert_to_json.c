@@ -1,6 +1,7 @@
 /* Created By Vinay Prabhakar on 28/10/20
  @Brief: Under this module we create a json file containing
  payload data and returns the path of the file.
+ Command: gcc convert_to_json.c -o out
  */
 
  #include<stdio.h>
@@ -38,6 +39,7 @@
 
  int main()
  {
-    convert_to_json("001-01-1234","First ");
+    convert_to_json("001-01-1234","first");
     return 0;
  }
+ 

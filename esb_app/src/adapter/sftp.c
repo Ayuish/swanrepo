@@ -53,7 +53,7 @@ void* sftp_upload(void* asptr,void* fileptr)
     //getting the size of the local file
     if(stat(file,&file_info))
     {
-        fprintf("Could not open '%s': %s\n",file,strerror(errno));
+        printf("Could not open %s: %s\n",file,strerror(errno));
         return strdup("Failed to open the file\n");
     }
 
@@ -92,7 +92,7 @@ void* sftp_upload(void* asptr,void* fileptr)
         curl_easy_setopt(curl,CURLOPT_INFILESIZE_LARGE,(curl_off_t)fsize);
 
         curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,0L);
-        curl_easy_setopt(curl,CURLOPT_USERPWD,"sftpuser_swan:prabhakars 589b");
+        curl_easy_setopt(curl,CURLOPT_USERPWD,"sftpuser:prabhakars 589b");
 
         curl_easy_setopt(curl,CURLOPT_VERBOSE,1L);
 
@@ -122,7 +122,7 @@ void* sftp_upload(void* asptr,void* fileptr)
 /*
 int main()
 {
-    sftp_upload(UPLOAD_FILE_AS,"payload.json");
+    sftp_upload(UPLOAD_FILE_AS,"output_first.json");
     return 0;
 }
 */
