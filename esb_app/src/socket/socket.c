@@ -9,6 +9,11 @@
 #include <sys/un.h>
 #include <stddef.h>
 
+/* required header files */
+#include "../bmd_extract/xml.h"
+#include "../db_access/connector.h"
+#define threshold 50
+
 bool create_worker_thread(int fd);
 
 /**
@@ -23,6 +28,17 @@ bool create_worker_thread(int fd);
  * off-loads the client connection to a new thread for processing.
  */
 
+void freeing_the_memory(transform_config *tf,transport_config *tp,bmd *bd){
+    free(tf->config_value);
+    free(tf->config_key);
+    free(tf);
+    free(tp->config_value);
+    free(tp->config_key);
+    free(tp);
+    free(bd->envelope);
+    free(bd->payload);
+    free(bd);
+}
 void log_msg(const char *msg, bool terminate) {
     printf("%s\n", msg);
     if (terminate) exit(-1); /* failure */
@@ -105,7 +121,8 @@ _Noreturn void start_server_socket(char *socket_file, int max_connects) {
             continue;
         }
 
-    }  /* while(1) */
+    }
+    /* while(1) */
 }
 
 
@@ -115,13 +132,106 @@ _Noreturn void start_server_socket(char *socket_file, int max_connects) {
  */
 void thread_function(int sock_fd) {
     log_msg("SERVER: thread_function: starting", false);
+    transform_config *tf = NULL;
+    transport_config *tp = NULL;
+    bmd *bd;
+    int id;
     char buffer[5000];
     memset(buffer, '\0', sizeof(buffer));
     int count = read(sock_fd, buffer, sizeof(buffer));
     if (count > 0) {
-        printf("SERVER: Received from client: %s\n", buffer);
+        printf("SERVER: Received from client i.e pathe of the xml file: %s\n", buffer);
+
+        /* Extracting the data from the bmd xml file*/
+        bd = parse_bmd_xml(buffer);
+
+        /*
+         * check if theere is an existing record present in esb_request table
+         * for which the BMD XML file location is same as this one
+         */
+
+         /*
+         If the existing record found for the received BMD XML file location
+          check_data_location() function return -1 if no record present else
+          id > 0 of the rom which has data_location as buffer
+         */
+          id = check_data_location(buffer);
+         if(id > 0) {
+             /* get processing_attempts of data of given file */
+             int processing_attempts = get_processing_attempts(buffer);
+             if(processing_attempts < threshold) {
+                 processing_attempts++;
+                 change_processing_attempts(processing_attempts,buffer);
+
+                 /*
+                  *look up the records routes,transform_config and transport_config tables
+                  */
+                 int route_id = get_active_route_id(bd->envelope->Sender,bd->envelope->Destination,
+                                                    bd->envelope->MessageType);
+                 if(route_id < 0) {
+                     close(sock_fd) ;/*break connection */
+                     log_msg("There is no active route_id present /n",false);
+                     pthread_exit(NULL);
+                 }
+                 tf = fetch_transform_config_key_and_value(route_id);
+                 tp = fetch_transport_config_key_and_value(route_id);
+             }else {
+                     update_esb_request("ERROR",id);
+                     /**
+                      * IMPLEMENT CLEANUP STEP
+                      */
+                 close(sock_fd); /*break connection */
+                 log_msg("Number of processing attempts is more than threshold/n",false);
+                 pthread_exit(NULL);
+
+             }
+
+         } else {
+             /* This else loop is executed when data of given bmd xml file is absent */
+
+             /* performing validation */
+             if(!is_bmd_valid(bd)) {
+                 close(sock_fd); /*break connection */
+                 log_msg("bmd is not valid ",false);
+                 pthread_exit(NULL);
+             }
+             int rc = insert_into_esb_request(bd->envelope->Sender,bd->envelope->Destination,
+                                              bd->envelope->MessageType,bd->envelope->ReferenceID,
+                                              bd->envelope->MessageID, buffer,"AVAILABLE",
+                                              "It is available",bd->envelope->CreationDateTime);
+             if(rc != 1) {
+                 close(sock_fd);/* break connection */
+                 log_msg("Insertion data into the esb_request failed",false);
+                 pthread_exit(NULL);
+             }
+
+             /*
+                  *look up the records routes,transform_config and transport_config tables
+                  */
+             int route_id = get_active_route_id(bd->envelope->Sender,bd->envelope->Destination,
+                                                bd->envelope->MessageType);
+             if(route_id < 0) {
+                 close(sock_fd); /*break connection */
+                 log_msg("There is no active route_id present /n",false);
+                 pthread_exit(NULL);
+             }
+             tf = fetch_transform_config_key_and_value(route_id);
+             tp = fetch_transport_config_key_and_value(route_id);
+
+        }
+
         write(sock_fd, buffer, sizeof(buffer)); /* echo as confirmation */
     }
+    /**
+     * IMPLEMENT vii step here
+     */
+     // if vii step is works successfully
+     if(true) {
+         update_esb_request("DONE",id);
+     }else{
+         update_esb_request("ERROR",id);
+     }
+    freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */
     log_msg("SERVER: thread_function: Done. Worker thread terminating.", false);
     pthread_exit(NULL); // Must be the last statement
@@ -135,15 +245,16 @@ void thread_function(int sock_fd) {
 bool create_worker_thread(int sock_fd) {
     log_msg("SERVER: Creating a worker thread.", false);
     pthread_t thr_id;
-    int rc = pthread_create(&thr_id,
+    int rc;
+    rc = pthread_create(&thr_id,
             /* Attributes of the new thread, if any. */
-                            NULL,
+                        NULL,
             /* Pointer to the function which will be
              * executed in new thread. */
-                            thread_function,
+                        thread_function,
             /* Argument to be passed to the above
              * thread function. */
-                            (void *) sock_fd);
+                        (void *) sock_fd);
     if (rc) {
         log_msg("SERVER: Failed to create thread.", false);
         return false;
@@ -181,7 +292,7 @@ void send_message_to_socket(char *msg, char *socket_file) {
  * @param argv
  * @return
  */
- /*
+
 int main(int argc, char *argv[]) {
     if (argc < 3) {
         printf("Usage: %s [server|client] [Local socket file path] [Message to send (needed only in case of client)]\n",
@@ -194,4 +305,4 @@ int main(int argc, char *argv[]) {
         send_message_to_socket(argv[3], argv[2]);
     }
 }
-*/
+

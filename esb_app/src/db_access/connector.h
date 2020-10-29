@@ -42,7 +42,6 @@ int insert_into_esb_request(char *sender_id, char *dest_id,
 int get_active_route_id(char *sender_id,char *destination_id, char *message_type);
 int update_esb_request(char * status,int id);
 int check_id_in_transform_config(int route_id);
-
 int check_id_in_transport_config(int route_id);
  
 int select_status(char * status);
@@ -51,5 +50,8 @@ transform_config *  fetch_transform_config_key_and_value(int route_id);
 
 transport_config *  fetch_transport_config_key_and_value(int route_id);
 
+int check_data_location(char *data_location);
+int get_processing_attempts(char *data_location);
+int change_processing_attempts(int processing_attempts,char *data_location);
 
 #endif //DATABASE_CONNECTOR_H

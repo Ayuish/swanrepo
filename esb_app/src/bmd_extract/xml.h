@@ -34,7 +34,6 @@ bmd* parse_bmd_xml(char* filepath);
 int is_bmd_valid(bmd* bd); 
 void insert(bmd* bd);
 
-
 /*
 char * attributes[7] =  {
     "MessageID",
