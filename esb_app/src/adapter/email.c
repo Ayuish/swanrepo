@@ -70,10 +70,11 @@ void* send_mail(void* toptr, void* file_path_ptr)
    //printf("DONE\n");
    return NULL;
 }
-
+/*
 int main()
 {
       int t=send_mail("testmail1@gmail.com","payload.json");
       printf("%d\n",t);
       return 0;
 }
+*/
