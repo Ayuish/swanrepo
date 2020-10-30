@@ -115,7 +115,7 @@ void* sftp_upload(void* asptr,void* fileptr)
     //close the file
     fclose(fp);
     curl_global_cleanup();
-    return "YES";
+    return "YES file sent to sftp server";
 }
 
 //commenting the main
