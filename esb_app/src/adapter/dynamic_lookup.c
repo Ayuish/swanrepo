@@ -8,6 +8,7 @@
 #include<string.h>
 #include<stdlib.h>
 #include<curl/curl.h>
+#include "adapter.h"
 
 void* remove_file(void* ptr, void* ptr1)
 {
@@ -23,10 +24,11 @@ const static struct {
 }
 
 function_map[]={
-    {"email",transport_email},
+    {"APIURL",transport_to_ifsc_razorpay},
+    {"email",send_mail},
     {"convert_to_json",convert_to_json},
     {"remove",remove_file},
-    {"sftp","sftp_upload"},
+    {"sftp",sftp_upload},
 };
 
 //following is the description that how esb can invoke the service adapter functions
@@ -37,8 +39,8 @@ char* call_function(const char* name,void* data,void* data1)
     {
         if(!strcmp(function_map[i].name,name)&& function_map[i].func)
         {
-            return fucntion_map[i].func(data,data1);
+            return function_map[i].func(data,data1);
         }
     }
-    return "NO";
+    return "NO Dynamic Calling Failed";
 }

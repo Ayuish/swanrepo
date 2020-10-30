@@ -19,7 +19,7 @@ static size_t writecallback(void* contents,size_t size, size_t nmemb, void* user
     size_t realsize=size*nmemb;
     struct memory* mem=(struct memory *)userp;
 
-    char* ptr=realloc(mem->memory,mem->size +realsize+1);
+    char* ptr=realloc(mem->memory,mem->size + realsize+1);
     if(ptr==NULL)
     {
         //out of memory
@@ -28,7 +28,7 @@ static size_t writecallback(void* contents,size_t size, size_t nmemb, void* user
     }
 
     mem->memory=ptr;
-    memcpy((&mem->memory[mem->size]),contents,realsize);
+    memcpy(&(mem->memory[mem->size]),contents,realsize);
 
     mem->size+=realsize;
     mem->memory[mem->size]=0;
@@ -67,7 +67,7 @@ void* transport_to_ifsc_razorpay(void* ptr,void* ptr1)
     //send all data to this fucntion
     curl_easy_setopt(curl,CURLOPT_WRITEFUNCTION,writecallback);
 
-    //ass chunk struct to callback fucntion
+    //pass chunk struct to callback fucntion
     curl_easy_setopt(curl,CURLOPT_WRITEDATA,&chunk);
 
     //get the result

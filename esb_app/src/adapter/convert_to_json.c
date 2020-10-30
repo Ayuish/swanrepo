@@ -11,7 +11,7 @@
 
  void* convert_to_json(void* payload, void* name)
  {
-    printf("Payload to json ...\n");
+    printf("Payload to json...\n");
     char bmd_name[50];
 
     //create file name
@@ -42,4 +42,4 @@
     convert_to_json("001-01-1234","first");
     return 0;
  }
- */
+*/

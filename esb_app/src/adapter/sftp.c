@@ -60,7 +60,7 @@ void* sftp_upload(void* asptr,void* fileptr)
     //size
     fsize=(curl_off_t)file_info.st_size;
 
-    printf("Local file size: " CURL_FORMAT_CURL_OFF_T "bytes .\n", fsize);
+    printf("Local file size: %" CURL_FORMAT_CURL_OFF_T "bytes .\n", fsize);
 
     //getting the file for reading only
     fp=fopen(file,"rb");
@@ -93,8 +93,8 @@ void* sftp_upload(void* asptr,void* fileptr)
 
         curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,0L);
         curl_easy_setopt(curl,CURLOPT_USERPWD,"sftpuser:prabhakars 589b");
-
-        curl_easy_setopt(curl,CURLOPT_VERBOSE,1L);
+	//this command us shows the internal working of curl step by step
+        //curl_easy_setopt(curl,CURLOPT_VERBOSE,1L);
 
         //initating the start for curl
         res=curl_easy_perform(curl);

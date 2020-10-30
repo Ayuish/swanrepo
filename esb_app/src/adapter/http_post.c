@@ -10,7 +10,7 @@ Command to run is : gcc http.c -lcurl -o o
 #include<stdlib.h>
 #include<curl/curl.h>
 
-
+#if 0
 int main(void)
 {
     CURL* curl;
@@ -47,3 +47,4 @@ int main(void)
      }
 
 }
+#endif

@@ -10,29 +10,32 @@
 #include<curl/curl.h>
 #include "adapter.h"
 
-#define FROM_ADDR "<testmail1@gmail.com>"
-#define TO_ADDR   "<testmail2@gmail.com>"
-#define CC_ADDR   "<testmail3@gmail.com>"
+#define FROM_ADDR "<vinay.prabhakar2016@vitstudent.ac.in>"
+#define TO_ADDR   "<vinayprabhakar91@gmail.com>"
+//#define CC_ADDR   "<vinayprabhakar91@gmail.com>"
+
+
 
 void* send_mail(void* toptr, void* file_path_ptr)
 {
    char* to =(char *)toptr;
    char* file_path=(char *)file_path_ptr;
    printf("===>Sending to %s\n",to);
+   printf("File is %s\n",file_path);
 
    CURL* curl;
    CURLcode res=CURLE_OK;
    struct curl_slist *recipients=NULL;
    
-   //uplaod_ctx.lines_read=0;
+  
 
    curl=curl_easy_init();
    if(curl)
    {
 
       //set username and password
-      curl_easy_setopt(curl,CURLOPT_USERNAME,"testmail1");
-      curl_easy_setopt(curl,CURLOPT_PASSWORD,"enter_password");
+      curl_easy_setopt(curl,CURLOPT_USERNAME,"vinayprabhakar91");
+      curl_easy_setopt(curl,CURLOPT_PASSWORD,"V.p9791222953");
       //url for mail server
       curl_easy_setopt(curl,CURLOPT_URL,"smtps://smtp.gmail.com:465");
 
@@ -43,7 +46,8 @@ void* send_mail(void* toptr, void* file_path_ptr)
 
       //recipients
       recipients=curl_slist_append(recipients,TO_ADDR);
-      recipients=curl_slist_append(recipients,CC_ADDR);
+      
+     // recipients=curl_slist_append(recipients,CC_ADDR);
       curl_easy_setopt(curl,CURLOPT_MAIL_RCPT,recipients);
 
       //callback function
@@ -58,6 +62,7 @@ void* send_mail(void* toptr, void* file_path_ptr)
       if(res!=CURLE_OK)
       {
          fprintf(stderr,"curl_easy_perform() failed : %s\n", curl_easy_strerror(res));
+         return "Sending failed\n";
       }
 
       //free the list of recipients
@@ -68,12 +73,12 @@ void* send_mail(void* toptr, void* file_path_ptr)
 
    }
    //printf("DONE\n");
-   return NULL;
+   return "Yes email sent";
 }
 /*
 int main()
 {
-      int t=send_mail("testmail1@gmail.com","payload.json");
+      int t=send_mail("vinayprabhakar91@gmail.com","payload.json");
       printf("%d\n",t);
       return 0;
 }
