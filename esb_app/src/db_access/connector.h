@@ -53,5 +53,6 @@ transport_config *  fetch_transport_config_key_and_value(int route_id);
 int check_data_location(char *data_location);
 int get_processing_attempts(char *data_location);
 int change_processing_attempts(int processing_attempts,char *data_location);
+int check_status(char *status, char *data_location);
 
 #endif //DATABASE_CONNECTOR_H
