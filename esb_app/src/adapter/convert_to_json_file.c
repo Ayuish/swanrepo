@@ -11,7 +11,7 @@
 
  void* convert_to_json(void* payload, void* name)
  {
-    printf("Payload to json...\n");
+    printf("Payload to json...");
     char bmd_name[50];
 
     //create file name
@@ -28,7 +28,7 @@
     }
 
     //write into json file
-    fprintf(fp,"%s\n",(char *)payload);
+    fprintf(fp,"\n%s\n",(char *)payload);
 
     //close the file
     fclose(fp);

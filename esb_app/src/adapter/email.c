@@ -10,8 +10,8 @@
 #include<curl/curl.h>
 #include "adapter.h"
 
-#define FROM_ADDR "<vinay.prabhakar2016@vitstudent.ac.in>"
-#define TO_ADDR   "<vinayprabhakar91@gmail.com>"
+#define FROM_ADDR "<testmail1@gmail.com>"
+#define TO_ADDR   "<testmail@gmail.com>"
 //#define CC_ADDR   "<vinayprabhakar91@gmail.com>"
 
 
@@ -34,8 +34,8 @@ void* send_mail(void* toptr, void* file_path_ptr)
    {
 
       //set username and password
-      curl_easy_setopt(curl,CURLOPT_USERNAME,"vinayprabhakar91");
-      curl_easy_setopt(curl,CURLOPT_PASSWORD,"V.p9791222953");
+      curl_easy_setopt(curl,CURLOPT_USERNAME,"testmail1");
+      curl_easy_setopt(curl,CURLOPT_PASSWORD,"enter_password");
       //url for mail server
       curl_easy_setopt(curl,CURLOPT_URL,"smtps://smtp.gmail.com:465");
 

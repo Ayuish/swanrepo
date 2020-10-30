@@ -53,14 +53,14 @@ void* sftp_upload(void* asptr,void* fileptr)
     //getting the size of the local file
     if(stat(file,&file_info))
     {
-        printf("Could not open %s: %s\n",file,strerror(errno));
+        printf("Could not open '%s': %s\n",file,strerror(errno));
         return strdup("Failed to open the file\n");
     }
 
     //size
     fsize=(curl_off_t)file_info.st_size;
 
-    printf("Local file size: %" CURL_FORMAT_CURL_OFF_T "bytes .\n", fsize);
+    printf("Local file size: % " CURL_FORMAT_CURL_OFF_T "bytes .\n", fsize);
 
     //getting the file for reading only
     fp=fopen(file,"rb");
