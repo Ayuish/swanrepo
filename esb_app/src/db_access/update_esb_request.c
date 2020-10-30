@@ -18,7 +18,7 @@ compilation command is update esb_request.c -I/usr/include/libxml -lxml2 -L/usr/
 
 int update_esb_request(char * status,int id)
 {
-    printf("Updating esb_request table ...\n");
+    printf("Updating esb_request status ...\n");
 
     MYSQL_STMT      *stmt;
     MYSQL_BIND      bind[2];

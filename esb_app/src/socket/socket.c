@@ -140,7 +140,7 @@ void thread_function(int sock_fd) {
     memset(buffer, '\0', sizeof(buffer));
     int count = read(sock_fd, buffer, sizeof(buffer));
     if (count > 0) {
-        printf("SERVER: Received from client i.e pathe of the xml file: %s\n", buffer);
+        printf("SERVER: Received from client i.e path of the xml file: %s\n", buffer);
 
         /* Extracting the data from the bmd xml file*/
         bd = parse_bmd_xml(buffer);
@@ -157,9 +157,13 @@ void thread_function(int sock_fd) {
          */
           id = check_data_location(buffer);
          if(id > 0) {
-             /* get processing_attempts of data of given file */
+             /*check whether the status is processing or not"
+
+             /* get processing_attempts of data of given file
+              * also check that the status is not "PROCESSING"
+              */
              int processing_attempts = get_processing_attempts(buffer);
-             if(processing_attempts < threshold) {
+             if(processing_attempts < threshold && (check_status("PROCESSING",buffer) == -1) ){
                  processing_attempts++;
                  change_processing_attempts(processing_attempts,buffer);
 
@@ -181,7 +185,7 @@ void thread_function(int sock_fd) {
                       * IMPLEMENT CLEANUP STEP
                       */
                  close(sock_fd); /*break connection */
-                 log_msg("Number of processing attempts is more than threshold/n",false);
+                 log_msg("Number of processing attempts is more than threshold or it is already processing/n",false);
                  pthread_exit(NULL);
 
              }
@@ -206,6 +210,10 @@ void thread_function(int sock_fd) {
              }
 
              /*
+              * change the status from available to processing so that other thread won't pick it
+              */
+               update_esb_request("PROCESSING",id);
+                  /*
                   *look up the records routes,transform_config and transport_config tables
                   */
              int route_id = get_active_route_id(bd->envelope->Sender,bd->envelope->Destination,
