@@ -10,8 +10,8 @@
 
 
 #define HOST "localhost"   /*hostname*/
-#define USER  "raja"       /*username*/
-#define PASS    "Kucharla@1"         /* Left blank for Code portability */
+#define USER  "root"       /*username*/
+#define PASS    "prabhakars 589b"         /* Left blank for Code portability */
 #define DB_NAME "esb_db"   /*name of the database*/
 #define PORT  3306         /*port number*/
 #define UNIX_SOCKET NULL   /*unix socket*/
