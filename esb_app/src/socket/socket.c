@@ -165,6 +165,7 @@ void thread_function(int sock_fd) {
              int processing_attempts = get_processing_attempts(buffer);
              if(processing_attempts < threshold && (check_status("PROCESSING",buffer) == -1) ){
                  processing_attempts++;
+                 //increase processing attempts by 1
                  change_processing_attempts(processing_attempts,buffer);
 
                  /*
