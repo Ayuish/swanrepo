@@ -243,13 +243,15 @@ void thread_function(int sock_fd) {
      }
      
      //commenting temoparirly
-     /*
+     
      char* payload=extract_payload(buffer);
-     printf("========> This is the paylaod to transfer %s\n",payload);
+   //  printf("========> This is the paylaod to transfer %s\n",payload);
      
      convert_to_json(payload,"to_transfer");
-     */
      
+     int send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
+     printf("!!!!!!!!!!%d\n",send);
+          
     freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */
     log_msg("SERVER: thread_function: Done. Worker thread terminating.", false);
