@@ -18,7 +18,7 @@
 #include<unistd.h>
 #endif
 
-#define UPLOAD_FILE_AS  "payload.json"
+#define UPLOAD_FILE_AS  "output_to_transfer.json"
 #define REMOTE_URL "sftp://127.0.0.1/sftpuser/sftp-test/"
 
 #define STRING_SIZE 100
@@ -111,6 +111,10 @@ void* sftp_upload(void* asptr,void* fileptr)
 
         //cleanup
         curl_easy_cleanup(curl);
+    }
+    else
+    {
+    	printf("Failed to send to local aftp server\n");
     }
     //close the file
     fclose(fp);

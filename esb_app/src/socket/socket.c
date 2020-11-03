@@ -9,6 +9,9 @@
 #include <sys/un.h>
 #include <stddef.h>
 
+#define UPLOAD_FILE_AS  "output_to_transfer.json"
+#define REMOTE_URL "sftp://127.0.0.1/sftpuser/sftp-test/"
+
 /* required header files */
 #include "../adapter/adapter.h"
 #include "../bmd_extract/xml.h"
@@ -242,8 +245,8 @@ void thread_function(int sock_fd) {
          update_esb_request("ERROR",id);
      }
      
-     //commenting temoparirly
-     
+    
+     //email as destination service ends at line 253
      char* payload=extract_payload(buffer);
    //  printf("========> This is the paylaod to transfer %s\n",payload);
      
@@ -251,7 +254,11 @@ void thread_function(int sock_fd) {
      
      char* send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
      printf("%s\n",send);
+     
+     //sftp as destination service
+     sftp_upload(UPLOAD_FILE_AS,"output_to_transfer.json");
           
+    //free the allocated memory 
     freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */
     log_msg("SERVER: thread_function: Done. Worker thread terminating.", false);
