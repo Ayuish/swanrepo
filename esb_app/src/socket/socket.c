@@ -9,6 +9,7 @@
 #include <sys/un.h>
 #include <stddef.h>
 
+// next 2 defines are for sftp server so that we can store data locally on it . See sftp.c if still confused .
 #define UPLOAD_FILE_AS  "output_to_transfer.json"
 #define REMOTE_URL "sftp://127.0.0.1/sftpuser/sftp-test/"
 
@@ -31,6 +32,8 @@ bool create_worker_thread(int fd);
  * if this code is to show how to write a socket based client server program that
  * off-loads the client connection to a new thread for processing.
  */
+
+//freeing the memory allocated throughout the code
 
 void freeing_the_memory(transform_config *tf,transport_config *tp,bmd *bd){
     free(tf->config_value);
@@ -235,18 +238,9 @@ void thread_function(int sock_fd) {
 
         write(sock_fd, buffer, sizeof(buffer)); /* echo as confirmation */
     }
-    /**
-     * IMPLEMENT vii step here
-     */
-     // if vii step is works successfully
-     if(true) {
-         update_esb_request("DONE",id);
-     }else{
-         update_esb_request("ERROR",id);
-     }
-     
     
-     //email as destination service ends at line 253
+    
+    //email as destination service ends at line 247
      char* payload=extract_payload(buffer);
    //  printf("========> This is the paylaod to transfer %s\n",payload);
      
@@ -257,7 +251,19 @@ void thread_function(int sock_fd) {
      
      //sftp as destination service
      sftp_upload(UPLOAD_FILE_AS,"output_to_transfer.json");
-          
+     
+     
+    /**
+     * IMPLEMENT vii step here
+     */
+     // if vii step is works successfully
+     if(true) {
+         update_esb_request("DONE",id);
+     }else{
+         update_esb_request("ERROR",id);
+     }
+     
+         
     //free the allocated memory 
     freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */

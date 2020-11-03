@@ -97,7 +97,7 @@ void extract_envelope_utils(xmlNode * node, bmd_envelope * bm)
                 /* CreationDateTime*/
                 else if((strcmp(((char *) node->name),attributes[4]))==0)
 	              {
-                   printf("yes\n");
+                  // printf("yes\n");
 		               bm->CreationDateTime =  (char *)malloc((n+1)* sizeof(char));
                    strcpy(bm->CreationDateTime ,(char *)xmlNodeGetContent(node));
                    if(strcmp(bm->CreationDateTime, "") ==0){
@@ -197,9 +197,9 @@ char * extract_payload(char * filepath)
         if ((strcmp(((char *) node->name),"Payload"))==0)
 	      {
 	              n= strlen((char*) xmlNodeGetContent(node));
-	          printf("payload length is  %d\n",n);
+	          //printf("payload length is  %d\n",n);
             Payload = (char *)malloc((n+2)* sizeof(char));
-            printf("%s\n", (char *) xmlNodeGetContent(node));
+           // printf("%s\n", (char *) xmlNodeGetContent(node));
            // Payload =  (char *) xmlNodeGetContent(node);
             strcpy(Payload , (char *) xmlNodeGetContent(node));
             	          printf("payload %s\n",Payload);
@@ -269,11 +269,10 @@ int main()
 /*
     int main()
     {
-        char filepath[100]="try.xml";
+        char filepath[100]="/home/vinay/Desktop/Desktop/dum.xml";
         bmd *bd=(bmd *)malloc(sizeof(bmd));
         bd=parse_bmd_xml(filepath);
         printf("\n");
         return 0;
     }
 */
-
