@@ -72,14 +72,19 @@ void* send_mail(void* toptr, void* file_path_ptr)
       curl_easy_cleanup(curl);
 
    }
+   else
+   {
+   	printf("Could not send the mail\n");
+   }
    //printf("DONE\n");
    return "Yes email sent";
 }
+
 /*
 int main()
 {
-      int t=send_mail("vinayprabhakar91@gmail.com","output_first.json");
-      printf("%d\n",t);
+      char* t=send_mail("vinayprabhakar91@gmail.com","output_first.json");
+      printf("%s\n",t);
       return 0;
 }
 */

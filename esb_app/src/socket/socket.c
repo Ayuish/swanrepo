@@ -249,8 +249,8 @@ void thread_function(int sock_fd) {
      
      convert_to_json(payload,"to_transfer");
      
-     int send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
-     printf("!!!!!!!!!!%d\n",send);
+     char* send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
+     printf("%s\n",send);
           
     freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */
