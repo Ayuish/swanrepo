@@ -44,7 +44,7 @@ int is_bmd_valid(bmd * bd)
         //MessageID
         if(bmd_file->envelope->MessageID==NULL)
         {
-            fprintf(stderr,"Message ID does not exist in BMD\n");
+            fprintf(stderr,"MessageID does not exist\n");
             return 0;
         }
 

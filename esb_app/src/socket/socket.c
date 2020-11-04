@@ -26,7 +26,7 @@ bool create_worker_thread(int fd);
  * https://www.gnu.org/software/libc/manual/html_node/Local-Socket-Example.html
  *
  * Compile it using: gcc local_socket_client_server.c -lpthread -o ipc_demo
- 
+
  * Needless to say, this code is not perfect and may have some subtle bugs. A purpose
  * if this code is to show how to write a socket based client server program that
  * off-loads the client connection to a new thread for processing.
@@ -235,13 +235,13 @@ void thread_function(int sock_fd) {
 
         write(sock_fd, buffer, sizeof(buffer)); /* echo as confirmation */
     }
-    
+
     //email as destination service ends at line 253
      char *payload=extract_payload(buffer);
     //  printf("========> This is the paylaod to transfer %s\n",payload);
-     
+
      convert_to_json(payload,"to_transfer");
-     
+
      char *send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
      printf("%s\n",send);
      if(strcmp(send,"Yes email sent") != 0) {
@@ -249,7 +249,7 @@ void thread_function(int sock_fd) {
      }else{
          update_esb_request("DONE",id);
      }
-     
+
      //sftp as destination service
      char *rc = sftp_upload(UPLOAD_FILE_AS,"output_to_transfer.json");
      if(strcmp(rc,"Yes file sent to sftp server") != 0) {
@@ -257,7 +257,7 @@ void thread_function(int sock_fd) {
      }else{
          update_esb_request("DONE",id);
      }
-          
+
     //free the allocated memory 
     freeing_the_memory(tf,tp,bd);
     close(sock_fd); /* break connection */
