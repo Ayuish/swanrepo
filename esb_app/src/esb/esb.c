@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "../adapter/email.h"
+#include "../adapter/adapter.h"
 #include "esb.h"
 //#include "../bmd_extract/xml.h"
 #include <libxml/parser.h>
