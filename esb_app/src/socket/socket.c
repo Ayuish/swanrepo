@@ -235,28 +235,28 @@ void thread_function(int sock_fd) {
 
         write(sock_fd, buffer, sizeof(buffer)); /* echo as confirmation */
     }
-    /**
-     * IMPLEMENT vii step here
-     */
-     // if vii step is works successfully
-     if(true) {
-         update_esb_request("DONE",id);
-     }else{
-         update_esb_request("ERROR",id);
-     }
-     
     
-     //email as destination service ends at line 253
-     char* payload=extract_payload(buffer);
-   //  printf("========> This is the paylaod to transfer %s\n",payload);
+    //email as destination service ends at line 253
+     char *payload=extract_payload(buffer);
+    //  printf("========> This is the paylaod to transfer %s\n",payload);
      
      convert_to_json(payload,"to_transfer");
      
-     char* send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
+     char *send=send_mail("vinayprabhakar91@gmail.com","output_to_transfer.json");
      printf("%s\n",send);
+     if(strcmp(send,"Yes email sent") != 0) {
+         update_esb_request("ERROR",id);
+     }else{
+         update_esb_request("DONE",id);
+     }
      
      //sftp as destination service
-     sftp_upload(UPLOAD_FILE_AS,"output_to_transfer.json");
+     char *rc = sftp_upload(UPLOAD_FILE_AS,"output_to_transfer.json");
+     if(strcmp(rc,"Yes file sent to sftp server") != 0) {
+         update_esb_request("ERROR",id);
+     }else{
+         update_esb_request("DONE",id);
+     }
           
     //free the allocated memory 
     freeing_the_memory(tf,tp,bd);
