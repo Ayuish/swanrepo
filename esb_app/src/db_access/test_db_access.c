@@ -250,6 +250,87 @@ test_update_esb_request(const MunitParameter params[], void *fixture)
     return MUNIT_OK;
 }
 
+/*{
+ * @brief unit testing of
+ * int check_data_location(char *data_location);
+ */
+static MunitResult
+test_check_data_location(const MunitParameter params[], void *fixture)
+{
+    (void)params;
+    char *data_location = (char *)fixture;
+    /* check the return value for the data_location already present in esb_request table */
+    int r_value = check_data_location(data_location);
+    munit_assert_int(r_value, !=, -1);
+    /* chekck the return value for the data_location not present in esb_request table */
+    r_value = check_data_location(" ");
+    munit_assert_int(r_value, ==, -1);
+    return MUNIT_OK;
+}
+
+/*{
+ * @brief unit testing of
+ * int get_processing_attempts(char *data_location);
+ */
+static MunitResult
+test_get_processing_attempts(const MunitParameter params[], void *fixture)
+{
+    (void)params;
+    char *data_location = (char *)fixture;
+    /* check the processing_attempts for the data_location already present in esb_request table */
+    int p_attempts = get_processing_attempts(data_location);
+    munit_assert_int(p_attempts, !=, -1);
+    /* chekck the processing_attempts  for the data_location not present in esb_request table */
+    p_attempts = get_processing_attempts(" ");
+    munit_assert_int(p_attempts, ==, -1);
+    return MUNIT_OK;
+}
+
+
+/*
+ * @brief unit testing of
+ * int change_processing_attempts(int processing_attempts,char *data_location);
+ */
+static MunitResult
+test_change_processing_attempts(const MunitParameter params[], void *fixture)
+{
+    (void)params;
+    char *data_location = (char *)fixture;
+    int p_attempts = get_processing_attempts(data_location);
+    /* cheking changing the processing_attempts for
+     * the data_location already present in esb_request table */
+    int r_value = change_processing_attempts(p_attempts+1,data_location);
+    munit_assert_int(r_value, ==, 1);
+    /* chekck changing the processing_attempts  for
+     * the data_location not present in esb_request table */
+    r_value = change_processing_attempts(p_attempts+1," ");
+    munit_assert_int(r_value, ==, -1);
+    return MUNIT_OK;
+}
+
+
+/*
+* @brief unit testing of
+* int change_processing_attempts(int processing_attempts,char *data_location);
+*/
+static MunitResult
+test_check_status(const MunitParameter params[], void *fixture)
+{
+    (void)params;
+    char *data_location = (char *)fixture;
+    /* check return value if the status is same as the
+     * status present in esb_request table */
+    int r_value = check_status("DONE",data_location);
+    munit_assert_int(r_value, ==, 1);
+    /* check return value if the status is not same as the
+      * status present in esb_request table */
+    r_value = check_status("",data_location);
+    munit_assert_int(r_value, ==, -1);
+    /* check the return value for the data_location not present in table */
+    r_value = check_status("DONE"," ");
+    munit_assert_int(r_value, ==, -1);
+    return MUNIT_OK;
+}
 
 static MunitTest database_tests[] = {
         {
@@ -351,6 +432,64 @@ static MunitTest database_tests[] = {
                 /* parameters */
                 NULL
         },
+        {
+                /* name */
+                (char *) "/test_db_access/check_data_location",
+                /* test */
+                test_check_data_location,
+                /* setup */
+                NULL,
+                /* tear_down */
+                NULL,
+                /* options */
+                MUNIT_TEST_OPTION_NONE,
+                /* parameters */
+                NULL
+
+        },
+        {
+                /* name */
+                (char *) "/test_db_access/get_processing_attempts",
+                /* test */
+                test_get_processing_attempts,
+                /* setup */
+                NULL,
+                /* tear_down */
+                NULL,
+                /* options */
+                MUNIT_TEST_OPTION_NONE,
+                /* parameters */
+                NULL
+
+        },
+        {
+                /* name */
+                (char *) "/test_db_access/change_processing_attempts",
+                /* test */
+                test_change_processing_attempts,
+                /* setup */
+                NULL,
+                /* tear_down */
+                NULL,
+                /* options */
+                MUNIT_TEST_OPTION_NONE,
+                /* parameters */
+                NULL
+        },
+        {
+                /* name */
+                (char *) "/test_db_access/check_status",
+                /* test */
+                test_check_status,
+                /* setup */
+                NULL,
+                /* tear_down */
+                NULL,
+                /* options */
+                MUNIT_TEST_OPTION_NONE,
+                /* parameters */
+                NULL
+        },
         /* Mark the end of the array with an entry where the test
          * function is NULL */
         {
@@ -375,10 +514,10 @@ static const  MunitSuite suite = {
 };
 
 
-/*
+
 int main(int argc,const char* argv[]) {
-    char *user_data = "/home/vinay/Desktop/swan/esb_app/src/test_files/dum1.xml";
+    char *user_data = "/home/rajashekhar/nho2020b2/swan/esb_app/src/test_files/dum2.xml";
     return munit_suite_main(&suite, (void *)user_data, argc, (char *const *) argv);
 }
 
-*/
+

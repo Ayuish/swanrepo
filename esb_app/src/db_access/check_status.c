@@ -195,9 +195,10 @@ int check_status(char *status, char *data_location) {
     /* returns number of rows in result */
     return -1;
 }
+
 /*
 int main(int argc, char **argv) {
-    int id = check_status("available","bmd.xml");
+    int id = check_status("DONE","/home/rajashekhar/nho2020b2/swan/esb_app/src/test_files/dum2.xml");
     printf("id = %d",id);
     return 0;
 }
