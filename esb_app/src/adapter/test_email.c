@@ -7,15 +7,16 @@
 #include "../test/munit.h"
 #include "adapter.h"
 
+/* For correct output */
 
 static void* 
 send_mail_setup(const MunitParameter params[], void* user_data)
 {
     (void )user_data;
     (void)params;
-    char* toptr = "2016eeb1081@iitrpr.ac.in";
+    char* toptr = "vinayprabhakar91@gmail.com";
     char* file_path_ptr="output_first.json";
-    char* res=send_mail("2016eeb1081@iitrpr.ac.in","output_first.json");
+    char* res=send_mail("vinayprabhakar91@gmail.com","output_first.json");
     return res;
 }
 
@@ -33,8 +34,41 @@ static void
 send_mail_tear_down(void* fixture)
 {
     char* res=(char *)fixture;
-    free(res);
+    //free(res);
 }
+
+/* For wrong email */
+
+static void* 
+send_mail1_setup(const MunitParameter params[], void* user_data)
+{
+    (void )user_data;
+    (void)params;
+    char* toptr = "wrongmail@gmail.com";
+    char* file_path_ptr="output_first.json";
+    char* res=send_mail("wrongmail@gmail.com","output_first.json");
+    return res;
+}
+
+static MunitResult
+test_send_mail1(const MunitParameter params[], void* fixture)
+{
+    char* res=(char *) fixture;
+    (void)params;
+    //char* ans=send_mail("vinayprabhakar92@gmail.com","output_first.json");
+    munit_assert_string_equal(res,"Sending failed");
+    return MUNIT_OK;
+}
+
+static void 
+send_mail1_tear_down(void* fixture)
+{
+    char* res=(char *)fixture;
+    //free(res);
+}
+
+
+
 
 static MunitTest adapter_tests[]={
 
@@ -53,6 +87,25 @@ static MunitTest adapter_tests[]={
     //paramters
     //NULL
     },
+
+
+    {
+
+    //name
+    (char *) "/test_email.c/send_mail1",
+    //test
+    test_send_mail1,
+    //setup
+    send_mail1_setup,
+    //tera down
+    send_mail1_tear_down,
+    //options
+    MUNIT_TEST_OPTION_NONE,
+    //paramters
+    //NULL
+    },
+
+
     //mark the end of array with an entry where the test function is nul
     {
         NULL,NULL,NULL,NULL,MUNIT_TEST_OPTION_NONE,NULL
@@ -80,7 +133,7 @@ static const MunitSuite suite={
 
 };
 
-
+/*
 int main(int argc,const char* argv[])
 {
     char* user_data= NULL;
@@ -88,3 +141,4 @@ int main(int argc,const char* argv[])
 
 
 }
+*/

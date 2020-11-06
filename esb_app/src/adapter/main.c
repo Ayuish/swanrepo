@@ -10,7 +10,7 @@
 #include "adapter.h"
 
 //commenting the main
-
+/*
 int main()
 {
     char* d1 = "998";
@@ -32,4 +32,4 @@ int main()
     return 0;
 }
 
-
+*/

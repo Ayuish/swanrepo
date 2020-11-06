@@ -431,7 +431,7 @@ static const MunitSuite test_suite ={
 //below implementation is necessary for EXIT_SUCCESSS and EXIT_FAILURE
 #include<stdlib.h>
 
-//#if 1
+/*
 int main(int argc,char** argv)
 {
     //now we run our test suite
@@ -439,4 +439,4 @@ int main(int argc,char** argv)
     return munit_suite_main(&test_suite,NULL,argc,NULL);
 }
 
-//#endif
+*/
