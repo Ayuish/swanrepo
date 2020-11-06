@@ -11,11 +11,11 @@
 static void* 
 send_mail_setup(const MunitParameter params[], void* user_data)
 {
-    char* file=(char *)user_data;
+    (void )user_data;
     (void)params;
-    char* toptr="vinayprabhakar91@gmail.com";
-    char* file_path_ptr="output.json";
-    char* res=send_mail(toptr,file_path_ptr);
+    char* toptr = "2016eeb1081@iitrpr.ac.in";
+    char* file_path_ptr="output_first.json";
+    char* res=send_mail("2016eeb1081@iitrpr.ac.in","output_first.json");
     return res;
 }
 
@@ -30,7 +30,7 @@ test_send_mail(const MunitParameter params[], void* fixture)
 }
 
 static void 
-test_send_mail_tear_down(void* fixture)
+send_mail_tear_down(void* fixture)
 {
     char* res=(char *)fixture;
     free(res);
@@ -44,8 +44,10 @@ static MunitTest adapter_tests[]={
     (char *) "/test_email.c/send_mail",
     //test
     test_send_mail,
+    //setup
+    send_mail_setup,
     //tera down
-    test_send_mail_tear_down,
+    send_mail_tear_down,
     //options
     MUNIT_TEST_OPTION_NONE,
     //paramters
@@ -74,7 +76,7 @@ static const MunitSuite suite={
     1,
 
     //options
-    MUNIT_TEST_OPTION_NONE
+    MUNIT_SUITE_OPTION_NONE
 
 };
 
