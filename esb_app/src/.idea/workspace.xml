@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8f9f4a5-7079-481a-ba2c-1922de8a7fe2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jlzey9XftpNoQ9eXmf9OGGtMtA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8f9f4a5-7079-481a-ba2c-1922de8a7fe2" name="Default Changelist" comment="" />
+      <created>1604393566143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604393566143</updated>
+      <workItem from="1604393567225" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="258" width="530" height="605" key="FileChooserDialogImpl" timestamp="1604393587755">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state x="734" y="258" width="530" height="605" key="FileChooserDialogImpl/88.34.1832.1046@88.34.1832.1046" timestamp="1604393587755" />
+    <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1604393596937">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state width="800" height="255" key="ImportCMakeProjectWizard.bottomPanel/88.34.1832.1046@88.34.1832.1046" timestamp="1604393596937" />
+    <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel" timestamp="1604393596937">
+      <screen x="88" y="34" width="1832" height="1046" />
+    </state>
+    <state width="800" height="595" key="ImportCMakeProjectWizard.topPanel/88.34.1832.1046@88.34.1832.1046" timestamp="1604393596937" />
+  </component>
+</project>
