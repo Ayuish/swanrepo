@@ -4,7 +4,7 @@
 It is highly recommended to have some prior knowledge to munit framework 
 before going into testing
 */
-//incomplete for now
+
 
 #include<stdio.h>
 #include "munit.h"

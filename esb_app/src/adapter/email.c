@@ -19,8 +19,18 @@
 void* send_mail(void* toptr, void* file_path_ptr)
 {
    char* to =(char *)toptr;
+   //printf("%s\n",to);
+   
+   char ans[]="";
+   for(int i=0;to[i]!='@';i++)
+   {
+   	strncat(ans,&to[i],1);
+   	
+   }
+   
+  // printf("%s\n",ans);
    char* file_path=(char *)file_path_ptr;
-   printf("===>Sending to %s\n",to);
+   printf("===>Sending to %s\n",ans);
    printf("File is %s\n",file_path);
 
    CURL* curl;
@@ -34,8 +44,8 @@ void* send_mail(void* toptr, void* file_path_ptr)
    {
 
       //set username and password
-      curl_easy_setopt(curl,CURLOPT_USERNAME,"vinayprabhakar91");
-      curl_easy_setopt(curl,CURLOPT_PASSWORD,"V.p9791222953");
+      curl_easy_setopt(curl,CURLOPT_USERNAME,ans);
+      curl_easy_setopt(curl,CURLOPT_PASSWORD,"enter_password");
       //url for mail server
       curl_easy_setopt(curl,CURLOPT_URL,"smtps://smtp.gmail.com:465");
 
@@ -80,11 +90,11 @@ void* send_mail(void* toptr, void* file_path_ptr)
    return "Yes email sent";
 }
 
-/*
+
 int main()
 {
-      char* t=send_mail("vinayprabhakar91@gmail.com","output_first1.json");
+      char* t=send_mail("vinayprabhakar91@gmail.com","output_first.json");
       printf("%s\n",t);
       return 0;
 }
-*/
+
