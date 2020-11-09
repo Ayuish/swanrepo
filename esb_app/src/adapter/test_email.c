@@ -14,8 +14,8 @@ send_mail_setup(const MunitParameter params[], void* user_data)
 {
     (void )user_data;
     (void)params;
-    char* toptr = "vinayprabhakar91@gmail.com";
-    char* file_path_ptr="output_first.json";
+   // char* toptr = "vinayprabhakar91@gmail.com";
+    //char* file_path_ptr="output_first.json";
     char* res=send_mail("vinayprabhakar91@gmail.com","output_first.json");
     return res;
 }
@@ -133,7 +133,7 @@ static const MunitSuite suite={
 
 };
 
-/*
+
 int main(int argc,const char* argv[])
 {
     char* user_data= NULL;
@@ -141,4 +141,4 @@ int main(int argc,const char* argv[])
 
 
 }
-*/
+
