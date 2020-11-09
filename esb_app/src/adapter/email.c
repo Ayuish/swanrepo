@@ -10,8 +10,8 @@
 #include<curl/curl.h>
 #include "adapter.h"
 
-#define FROM_ADDR "kucharlar@gmail.com"
-#define TO_ADDR   "2016eeb1081@iitrpr.ac.in"
+#define FROM_ADDR "<kucharlar@gmail.com>"
+#define TO_ADDR   "<2016eeb1081@iitrpr.ac.in>"
 //#define CC_ADDR   "<vinayprabhakar91@gmail.com>"
 
 
@@ -80,12 +80,11 @@ void* send_mail(void* toptr, void* file_path_ptr)
    return "Yes email sent";
 }
 
-
+/*
 int main()
 {
       char* t=send_mail("2016eeb1081@iitrpr.ac.in","output_first.json");
       printf("%s\n",t);
       return 0;
 }
-
-
+*/
