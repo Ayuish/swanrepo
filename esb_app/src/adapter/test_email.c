@@ -1,5 +1,7 @@
 /* Created By Vinay Prabhakar on 6/11/20
     @Brief: Writing test cases for adapter function
+    to run : gcc test_email.c email.c ../test/munit.c -lcurl -o out
+
 */
 
 #include<stdio.h>
