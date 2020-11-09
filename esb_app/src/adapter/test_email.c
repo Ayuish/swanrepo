@@ -3,38 +3,23 @@
 */
 
 #include<stdio.h>
-#include<stdlib.h>
+//#include<stdlib.h>
 #include "../test/munit.h"
 #include "adapter.h"
 
 
-static void* 
-send_mail_setup(const MunitParameter params[], void* user_data)
-{
-    (void )user_data;
-    (void)params;
-    char* toptr = "2016eeb1081@iitrpr.ac.in";
-    char* file_path_ptr="output_first.json";
-    char* res=send_mail("2016eeb1081@iitrpr.ac.in","output_first.json");
-    return res;
-}
 
 static MunitResult
 test_send_mail(const MunitParameter params[], void* fixture)
 {
-    char* res=(char *) fixture;
+    (void)fixture;
     (void)params;
-    //char* ans=send_mail("vinayprabhakar91@gmail.com","output.json");
+    char* res i= send_mail("2016eeb1081@iitrpr.ac.in","output.json");
     munit_assert_string_equal(res,"Yes email sent");
     return MUNIT_OK;
 }
 
-static void 
-send_mail_tear_down(void* fixture)
-{
-    char* res=(char *)fixture;
-    free(res);
-}
+
 
 static MunitTest adapter_tests[]={
 
@@ -45,9 +30,9 @@ static MunitTest adapter_tests[]={
     //test
     test_send_mail,
     //setup
-    send_mail_setup,
+    NULL,
     //tera down
-    send_mail_tear_down,
+    NULL,
     //options
     MUNIT_TEST_OPTION_NONE,
     //paramters
