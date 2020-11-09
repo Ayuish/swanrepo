@@ -49,7 +49,7 @@ void* send_mail(void* toptr, void* file_path_ptr)
 
       //set username and password
       curl_easy_setopt(curl,CURLOPT_USERNAME, ans);// put username of sender's email
-      curl_easy_setopt(curl,CURLOPT_PASSWORD,"Kucharla@1");
+      curl_easy_setopt(curl,CURLOPT_PASSWORD,"enterpassword");
       //url for mail server
       curl_easy_setopt(curl,CURLOPT_URL,"smtps://smtp.gmail.com:465");
 
