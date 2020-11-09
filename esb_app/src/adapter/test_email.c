@@ -68,7 +68,7 @@ static const MunitSuite suite={
 
 };
 
-
+/*
 int main(int argc,const char* argv[])
 {
     char* user_data= NULL;
@@ -76,3 +76,4 @@ int main(int argc,const char* argv[])
 
 
 }
+*/
