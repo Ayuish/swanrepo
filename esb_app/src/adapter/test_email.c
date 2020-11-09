@@ -8,18 +8,19 @@
 #include "adapter.h"
 
 
-
 static MunitResult
 test_send_mail(const MunitParameter params[], void* fixture)
 {
     (void)fixture;
     (void)params;
-    char* res i= send_mail("2016eeb1081@iitrpr.ac.in","output.json");
+    /* checking the return string for correct sender's email address */
+    char* res = send_mail("2016eeb1081@iitrpr.ac.in","output.json");
+    munit_assert_string_equal(res,"Yes email sent");
+    /* checking the return string for another sender's email address */
+    res = send_mail("vinayprabhakar91@gmail.com","output.json");
     munit_assert_string_equal(res,"Yes email sent");
     return MUNIT_OK;
 }
-
-
 
 static MunitTest adapter_tests[]={
 
@@ -35,8 +36,8 @@ static MunitTest adapter_tests[]={
     NULL,
     //options
     MUNIT_TEST_OPTION_NONE,
-    //paramters
-    //NULL
+    //parameters
+    NULL
     },
     //mark the end of array with an entry where the test function is nul
     {

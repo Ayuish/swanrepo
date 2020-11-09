@@ -10,15 +10,29 @@
 #include<curl/curl.h>
 #include "adapter.h"
 
-#define FROM_ADDR "<kucharlar@gmail.com>"
-#define TO_ADDR   "<2016eeb1081@iitrpr.ac.in>"
-//#define CC_ADDR   "<vinayprabhakar91@gmail.com>"
+#define FROM_ADDR "kucharlar@gmail.com"
+#define TO_ADDR   "2016eeb1081@iitrpr.ac.in"
+//#define CC_ADDR   "vinayprabhakar91@gmail.com"
 
 
 
 void* send_mail(void* toptr, void* file_path_ptr)
 {
    char* to =(char *)toptr;
+   //printf("%s\n",to);
+
+   char ans[50];
+   int i = 0;
+   while(FROM_ADDR[i] != '@') {
+      ans[i] =  FROM_ADDR[i];
+      i++;
+   }
+   for(;i<50;i++) {
+   ans[i] = '\0';
+   }
+   printf("%s\n",ans);
+
+  // printf("%s\n",ans);
    char* file_path=(char *)file_path_ptr;
    printf("===>Sending to %s\n",to);
    printf("File is %s\n",file_path);
@@ -34,7 +48,7 @@ void* send_mail(void* toptr, void* file_path_ptr)
    {
 
       //set username and password
-      curl_easy_setopt(curl,CURLOPT_USERNAME,"kucharlar");
+      curl_easy_setopt(curl,CURLOPT_USERNAME, ans);// put username of sender's email
       curl_easy_setopt(curl,CURLOPT_PASSWORD,"Kucharla@1");
       //url for mail server
       curl_easy_setopt(curl,CURLOPT_URL,"smtps://smtp.gmail.com:465");
@@ -45,7 +59,7 @@ void* send_mail(void* toptr, void* file_path_ptr)
       curl_easy_setopt(curl,CURLOPT_MAIL_FROM,FROM_ADDR);
 
       //recipients
-      recipients=curl_slist_append(recipients,TO_ADDR);
+      recipients=curl_slist_append(recipients,to);
       
      // recipients=curl_slist_append(recipients,CC_ADDR);
       curl_easy_setopt(curl,CURLOPT_MAIL_RCPT,recipients);
@@ -83,7 +97,7 @@ void* send_mail(void* toptr, void* file_path_ptr)
 /*
 int main()
 {
-      char* t=send_mail("2016eeb1081@iitrpr.ac.in","output_first.json");
+      char* t=send_mail("2016eeb1081@iitrpr.ac.in","output.json");
       printf("%s\n",t);
       return 0;
 }
