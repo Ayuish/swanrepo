@@ -114,7 +114,7 @@ void* sftp_upload(void* asptr,void* fileptr)
     }
     else
     {
-    	printf("Failed to send to local aftp server\n");
+    	printf("Failed to send to local sftp server\n");
     }
     //close the file
     fclose(fp);
