@@ -38,12 +38,14 @@
 #include "esb.h"
 
 #define PATH_MAX 500
+extern void send_message_to_socket(char *msg, char *socket_file);
 
 int send_bmd_path_to_socket(char *msg, char *socket_file){
 	/**
 	 * TODO: This function can be implemented in a separate module
 	 * which will also implement the socket server.
 	 */
+	 send_message_to_socket(msg,socket_file);
 	return 1; /* 1 => Success */
 }
 
